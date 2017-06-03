@@ -1,0 +1,40 @@
+// Miscellaneous
+
+// Advanced tables
+
+.table {
+    a {
+        margin-left: 1rem;
+    }
+    fieldset {
+        margin-bottom: 0;
+        label {
+            height: 8px;
+        }
+    }
+    
+}
+// Product table
+.product-table {
+    img {
+        max-height: 150px;
+        min-width: 50px;
+    }
+    td {
+        vertical-align: middle;
+    }
+}
+
+// Inline list with images
+
+.inline-ul-img {
+    li {
+        display: inline;
+        img {
+            max-width: 100px;
+            @extend .z-depth-1-half;
+            margin: 8px;
+        }
+    }
+}
+ 

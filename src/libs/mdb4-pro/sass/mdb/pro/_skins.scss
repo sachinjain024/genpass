@@ -1,0 +1,704 @@
+// Skins
+$blue-skin-color: #062A64;
+$green-skin-color: #003830;
+$purple-skin-color: #650696;
+$deep-orange-skin-color: #8A1A00;
+// Blue skin
+.blue-skin {
+    .primary-color {
+        background-color: $blue-skin-color!important;
+    }
+    .navbar,
+    .page-footer {
+        background-color: lighten( $blue-skin-color, 2%);
+    }
+    .side-nav {
+        @extend .blue-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/regular/nature/img%20(62).jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid lighten( $primary-color, 5%);
+        }
+        .social a {
+            &:hover {
+                background-color: lighten( $blue-skin-color, 0%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: $blue-skin-color;
+                }
+                &:hover {
+                    background-color: lighten( $blue-skin-color, 1%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: lighten( $blue-skin-color, 0%);
+    }
+    .btn-primary {
+        background: $primary-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $primary-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $primary-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #5C4AF5;
+        &:hover,
+        &:focus {
+            background-color: lighten( #5C4AF5, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #5C4AF5, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: $primary-color-dark;
+        &:hover,
+        &:focus {
+            background-color: lighten( $primary-color-dark, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $primary-color-dark, 20%)!important;
+        }
+    }
+}
+
+// Red skin
+.red-skin {
+    .primary-color {
+        background-color: #79000C!important;
+    }
+    .navbar {
+        background-color: darken( $danger-color-dark, 10%);
+    }
+    .page-footer {
+        background-color: darken( $danger-color-dark, 25%);
+    }
+    .side-nav {
+        @extend .red-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/regular/people/img%20(9).jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $danger-color-dark, 25%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $danger-color-dark, 25%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: darken( $danger-color-dark, 25%);
+                }
+                &:hover {
+                    background-color: darken( $danger-color-dark, 25%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: darken( $danger-color-dark, 10%);
+    }
+    .btn-primary {
+        background: $danger-color-dark;
+        &:hover,
+        &:focus {
+            background-color: lighten( $danger-color-dark, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $danger-color-dark, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #7D2900;
+        &:hover,
+        &:focus {
+            background-color: lighten( #7D2900, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #7D2900, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #79000C;
+        &:hover,
+        &:focus {
+            background-color: lighten( #79000C, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #79000C, 20%)!important;
+        }
+    }
+}
+
+// Green skin
+.green-skin {
+    .primary-color {
+        background-color: #003830!important;
+    }
+    .navbar {
+        background-color: darken( $green-skin-color, 0%);
+    }
+    .page-footer {
+        background-color: darken( $green-skin-color, 5%);
+    }
+    .side-nav {
+        @extend .green-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/regular/nature/img%20(60).jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $green-skin-color, 5%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $green-skin-color, 5%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: darken( $green-skin-color, 3%);
+                }
+                &:hover {
+                    background-color: darken( $green-skin-color, 3%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: darken( $green-skin-color, 0%);
+    }
+    .btn-primary {
+        background: $green-skin-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $green-skin-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $green-skin-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #294F6F;
+        &:hover,
+        &:focus {
+            background-color: lighten( #294F6F, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #294F6F, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #226568;
+        &:hover,
+        &:focus {
+            background-color: lighten( #226568, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #226568, 20%)!important;
+        }
+    }
+}
+
+// Purple skin
+.purple-skin {
+    .primary-color {
+        background-color: #650696!important;
+    }
+    .navbar {
+        background-color: darken( $purple-skin-color, 5%);
+    }
+    .page-footer {
+        background-color: darken( $purple-skin-color, 15%);
+    }
+    .side-nav {
+        @extend .purple-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/regular/nature/img%20(73).jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $purple-skin-color, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $purple-skin-color, 10%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: darken( $purple-skin-color, 5%);
+                }
+                &:hover {
+                    background-color: darken( $purple-skin-color, 5%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: darken( $purple-skin-color, 5%);
+    }
+    .btn-primary {
+        background: $purple-skin-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $purple-skin-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $purple-skin-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #A6007D;
+        &:hover,
+        &:focus {
+            background-color: lighten( #A6007D, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #A6007D, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #21109C;
+        &:hover,
+        &:focus {
+            background-color: lighten( #21109C, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #21109C, 20%)!important;
+        }
+    }
+}
+
+// Dark skin
+.dark-skin {
+    .primary-color {
+        background-color: $elegant-color!important;
+    }
+    .navbar {
+        background-color: lighten( $elegant-color, 5%);
+    }
+    .page-footer {
+        background-color: darken( $elegant-color, 5%);
+    }
+    .side-nav {
+        @extend .dark-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/regular/nature/img%20(68).jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $elegant-color, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: lighten( $elegant-color, 0%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: lighten( $elegant-color, 0%);
+                }
+                &:hover {
+                    background-color: lighten( $elegant-color, 0%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: lighten( $elegant-color, 5%);
+    }
+    .btn-primary {
+        background: $elegant-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $elegant-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $elegant-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #3F729B;
+        &:hover,
+        &:focus {
+            background-color: lighten( #3F729B, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #3F729B, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #676767;
+        &:hover,
+        &:focus {
+            background-color: lighten( #676767, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #676767, 20%)!important;
+        }
+    }
+}
+
+// Grey skin
+.grey-skin {
+    .primary-color {
+        background-color: $stylish-color!important;
+    }
+    .navbar {
+        background-color: lighten( $stylish-color, 5%);
+    }
+    .page-footer {
+        background-color: darken( $stylish-color, 5%);
+    }
+    .side-nav {
+        @extend .grey-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/regular/city/img%20(22).jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $stylish-color, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $stylish-color, 5%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: darken( $stylish-color, 5%);
+                }
+                &:hover {
+                    background-color: darken( $stylish-color, 5%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: lighten( $stylish-color, 5%);
+    }
+    .btn-primary {
+        background: $stylish-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $stylish-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $stylish-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #3F729B;
+        &:hover,
+        &:focus {
+            background-color: lighten( #3F729B, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #3F729B, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #17202F;
+        &:hover,
+        &:focus {
+            background-color: lighten( #17202F, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #17202F, 20%)!important;
+        }
+    }
+}
+
+// MDB skin
+.mdb-skin {
+    .primary-color {
+        background-color: $unique-color!important;
+    }
+    .navbar {
+        background-color: lighten( $unique-color, 0%);
+    }
+    .page-footer {
+        background-color: darken( $unique-color, 15%);
+    }
+    .side-nav {
+        @extend .mdb-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/regular/nature/img%20(55).jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $unique-color, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $unique-color, 15%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: darken( $unique-color, 15%);
+                }
+                &:hover {
+                    background-color: darken( $unique-color, 15%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: lighten( $unique-color, 0%);
+    }
+    .btn-primary {
+        background: $unique-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $unique-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $unique-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: $unique-color-dark;
+        &:hover,
+        &:focus {
+            background-color: lighten( $unique-color-dark, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $unique-color-dark, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #154771;
+        &:hover,
+        &:focus {
+            background-color: lighten( #154771, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #154771, 20%)!important;
+        }
+    }
+}
+
+//Deep Orange skin
+.deep-orange-skin {
+    .primary-color {
+        background-color: $deep-orange-skin-color!important;
+    }
+    .navbar {
+        background-color: lighten( $deep-orange-skin-color, 0%);
+        .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+            background-color: lighten($deep-orange-skin-color, 0%);
+        }
+    }
+    .page-footer {
+        background-color: darken( $deep-orange-skin-color, 15%);
+    }
+    .side-nav {
+        @extend .deep-orange-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/regular/nature/img%20(51).jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $deep-orange-skin-color, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken($deep-orange-skin-color, 5%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: darken( $deep-orange-skin-color, 5%);
+                }
+                &:hover {
+                    background-color: darken( $deep-orange-skin-color, 5%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .btn-primary {
+        background: $deep-orange-skin-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $deep-orange-skin-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $deep-orange-skin-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #DD6000;
+        &:hover,
+        &:focus {
+            background-color: lighten( #DD6000, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #DD6000, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #830012;
+        &:hover,
+        &:focus {
+            background-color: lighten( #830012, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #830012, 20%)!important;
+        }
+    }
+}
+
+// Graphite skin
+.graphite-skin {
+    .primary-color {
+        background-color: $special-color!important;
+    }
+    .navbar {
+        background-color: lighten( $special-color, 0%);
+        .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+            background-color: lighten( $special-color, 0%);
+        }
+    }
+    .page-footer {
+        background-color: darken( $special-color, 5%);
+    }
+    .side-nav {
+        @extend .graphite-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/regular/nature/img%20(67).jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $special-color, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $special-color, 5%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: darken( $special-color, 5%);
+                }
+                &:hover {
+                    background-color: darken( $special-color, 5%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .btn-primary {
+        background: $special-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $special-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $special-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #453D55;
+        &:hover,
+        &:focus {
+            background-color: lighten( #453D55, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #453D55, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #154771;
+        &:hover,
+        &:focus {
+            background-color: lighten( #154771, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #154771, 20%)!important;
+        }
+    }
+}
