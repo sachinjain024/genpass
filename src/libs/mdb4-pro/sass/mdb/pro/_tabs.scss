@@ -141,3 +141,101 @@
 .tabs-2 {
     text-align: center;
 }
+
+// Classic tabs
+.tabs-wrapper {
+    overflow-x: hidden;
+}
+
+.classic-tabs {
+    @include flexbox()
+    white-space: nowrap;
+    overflow-x:auto;
+    @media (min-width: 62rem) {
+        overflow-x:hidden;
+    }
+    li {
+        @include flex(1 0 30%);
+        @media (min-width: 62em) {
+            flex:inherit;
+        }
+        a {
+            display:block;
+            padding:20px 24px;
+            font-size:13px;
+            text-transform:uppercase;
+            color:rgba(255,255,255,.7);
+            text-align:center;
+            border-radius:0;
+            &.active {
+                border-bottom:3px solid #ffeb3b;
+                color:#fff;
+            }
+        }
+        @media (min-width: 62em) {
+            &:first-child {
+                margin-left:56px;
+            }           
+        }
+    }
+    &.tabs-grey {
+        background-color:#546e7a;
+        li {
+            a {
+                &.active {
+                    border-color:#fff;
+                }
+            }
+        }
+    }
+    &.tabs-cyan {
+        background-color:#00bcd4;
+        li {
+            a {
+                &.active {
+                    border-color:#ffeb3b;
+                }
+            }
+        }
+    }
+    &.tabs-pink {
+        background-color:#ec407a;
+        li {
+            a {
+                &.active {
+                    border-color:#673ab7;
+                }
+            }
+        }
+    }
+    &.tabs-orange {
+        background-color:#ffa000;
+        li {
+            a {
+                &.active {
+                    border-color:#e53935;
+                }
+            }
+        }
+    }
+    &.tabs-green {
+        background-color:#7cb342;
+        li {
+            a {
+                &.active {
+                    border-color:#1565c0;
+                }
+            }
+        }
+    }
+    &.tabs-primary {
+        background-color:#4285F4;
+        li {
+            a {
+                &.active {
+                    border-color:#fff;
+                }
+            }
+        }
+    }
+}

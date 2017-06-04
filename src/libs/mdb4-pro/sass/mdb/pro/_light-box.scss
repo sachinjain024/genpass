@@ -820,12 +820,14 @@ a.pswp__share--download {
 .mdb-lightbox {
     figure {
         margin: 0;
+        float:left;
         .img-fluid {
             display: inline
         }
         img {
             cursor: zoom-in;
             @include transition(opacity .4s);
+            @include border-radius(0);
             &:hover {
                opacity: 0.8;
             }

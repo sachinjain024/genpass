@@ -29,8 +29,10 @@
     a {
         color: #fff;
         font-size: 15px;
+        font-weight: 300;
     }
     .dropdown .dropdown-menu {
+        // padding: .5rem;
         a {
             padding: 1rem;
             color: #616161;
@@ -39,10 +41,12 @@
     // Breadcrumb double navbar
     .breadcrumb-dn {
         float: left;
+        margin-top:4px;
         p {
             margin: 0;
-            padding-top: 6px;
+            padding-top: 0;
             padding-left: 1rem;
+            font-weight: 300;
         }
     }
     // Slide-out button for SideNav
@@ -114,6 +118,10 @@
             padding-left: 3px;
             padding-right: 3px;
         }
+        @media (max-width: 992px) {
+            padding-left:6px;
+            padding-right:6px;
+        }
     }
     // Navbar with avatar
     &.avatar {
@@ -129,6 +137,15 @@
             &:after {
                 display: none;
             }
+        }
+    }
+    .dropdown-menu.dropdown a {
+        color:#212121;
+        &:hover,
+        &:focus,
+        &:active {
+            color: #fff;
+            @extend .z-depth-1;
         }
     }
 }
@@ -164,8 +181,25 @@
             display: block;
             position: relative;
             font-size: 1.4rem;
+            margin-top:2px;
             margin-right: 10px;
             margin-left: 10px;
+        }
+    }
+}
+
+// header breadcrumb
+
+.header-breadcrumb {
+    padding-top: .425rem;
+    padding-bottom: .425rem;
+    font-size:15px;
+    .breadcrumb-item {
+        &.active {
+            color:#fff;
+        }
+        &:before {
+            color:#fff;
         }
     }
 }

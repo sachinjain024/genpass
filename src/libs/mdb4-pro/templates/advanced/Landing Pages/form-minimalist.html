@@ -44,7 +44,7 @@
         /*Intro*/
         
         .view {
-            background: url("http://mdbootstrap.com/images/regular/people/img%20(51).jpg")no-repeat center center fixed;
+            background: url("https://mdbootstrap.com/images/regular/people/img%20(51).jpg")no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -87,67 +87,51 @@
     <header>
 
         <!--Navbar-->
-        <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
-
-            <!-- Collapse button-->
-            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
-            <i class="fa fa-bars"></i></button>
-
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-dark scrolling-navbar">
             <div class="container">
-
-                <!--Collapse content-->
-                <div class="collapse navbar-toggleable-xs" id="collapseEx">
-                    <!--Navbar Brand-->
-                    <a class="navbar-brand" href="http://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">MDB</a>
-                    <!--Links-->
-                    <ul class="nav navbar-nav smooth-scroll">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="https://mdbootstrap.com/img/logo/mdb-transparent-sm-shadows.png" class="d-inline-block align-top" alt="MDBootstrap">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav navbar-nav smooth-scroll mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link waves-effect waves-light" href="#home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#best-features">Features</a>
+                            <a class="nav-link waves-effect waves-light" href="#best-features">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#examples-of-use">Examples</a>
+                            <a class="nav-link waves-effect waves-light" href="#examples-of-use">Examples</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                            <a class="nav-link waves-effect waves-light" href="#testimonials">Testimonials</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Pricing</a>
+                            <a class="nav-link waves-effect waves-light" href="#pricing">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#our-team">Team</a>
+                            <a class="nav-link waves-effect waves-light" href="#our-team">Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link waves-effect waves-light" href="#contact">Contact</a>
                         </li>
                     </ul>
-
-                    <!--Navbar icons-->
-                    <ul class="nav navbar-nav nav-flex-icons">
-
-                        <li class="nav-item wow fadeInRight" data-wow-delay="0.2s">
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link"><i class="fa fa-twitter"></i></a>
                         </li>
-                        <li class="nav-item wow fadeInRight" data-wow-delay="0.3s">
-                            <a class="nav-link"><i class="fa fa-google-plus"></i></a>
-                        </li>
-                        <li class="nav-item dropdown wow fadeInRight" data-wow-delay="0.4s">
-                            <a class="nav-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i></a>
-                            <div class="dropdown-menu dropdown-primary dd-right" aria-labelledby="dropdownMenu1" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-instagram"></i></a>
                         </li>
                     </ul>
-
                 </div>
-                <!--/.Collapse content-->
-
             </div>
-
         </nav>
         <!--/.Navbar-->
 
@@ -164,7 +148,7 @@
                                 <hr class="hr-light wow fadeInLeft">
                                 <p class="wow fadeInLeft" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae, quisquam iste, maiores. Nulla.</p>
                                 <br>
-                                <a class="btn btn-white-outline btn-lg wow fadeInLeft" data-wow-delay="0.7s">Learn more</a>
+                                <a class="btn btn-outline-white btn-lg wow fadeInLeft" data-wow-delay="0.7s">Learn more</a>
                             </div>
                         </div>
                         <!--/.First column-->
@@ -184,7 +168,7 @@
 
 
 
-                                    <div class="text-xs-center">
+                                    <div class="text-center">
                                         <button class="btn btn-primary btn-lg">Sign up</button>
 
                                     </div>
@@ -215,12 +199,12 @@
                 <!--Section description-->
                 <p class="section-description wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
 
-                <div class="row text-xs-center">
+                <div class="row text-center">
 
                     <!--First column-->
-                    <div class="col-md-4 m-b-r wow fadeInUp">
+                    <div class="col-md-4 mb-r wow fadeInUp">
                         <div class="avatar">
-                            <img src="http://mdbootstrap.com/images/avatars/img%20(5).jpg">
+                            <img src="https://mdbootstrap.com/images/avatars/img%20(5).jpg">
                         </div>
                         <h4>Maria Kate</h4>
                         <h5>Photographer</h5>
@@ -236,9 +220,9 @@
                     <!--/First column-->
 
                     <!--Second column-->
-                    <div class="col-md-4 m-b-r wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="col-md-4 mb-r wow fadeInUp" data-wow-delay="0.2s">
                         <div class="avatar">
-                            <img src="http://mdbootstrap.com/images/avatars/img%20(6).jpg">
+                            <img src="https://mdbootstrap.com/images/avatars/img%20(6).jpg">
                         </div>
                         <h4>Sarah Melyah</h4>
                         <h5>Front-end Developer</h5>
@@ -254,9 +238,9 @@
                     <!--/Second column-->
 
                     <!--Third column-->
-                    <div class="col-md-4 m-b-r wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="col-md-4 mb-r wow fadeInUp" data-wow-delay="0.4s">
                         <div class="avatar">
-                            <img src="http://mdbootstrap.com/images/avatars/img%20(8).jpg">
+                            <img src="https://mdbootstrap.com/images/avatars/img%20(8).jpg">
                         </div>
                         <h4>John Doe</h4>
                         <h5>Web Developer</h5>
@@ -292,10 +276,10 @@
                     <div class="col-md-4">
                         <!--First row-->
                         <div class="row">
-                            <div class="col-xs-2">
+                            <div class="col-2">
                                 <i class="fa fa-flag-checkered indigo-text"></i>
                             </div>
-                            <div class="col-xs-10">
+                            <div class="col-10">
                                 <h4 class="feature-title">International</h4>
                                 <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
                                 <div style="height:30px"></div>
@@ -305,10 +289,10 @@
 
                         <!--Second row-->
                         <div class="row">
-                            <div class="col-xs-2">
+                            <div class="col-2">
                                 <i class="fa fa-flask blue-text"></i>
                             </div>
-                            <div class="col-xs-10">
+                            <div class="col-10">
                                 <h4 class="feature-title">Experimental</h4>
                                 <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
                                 <div style="height:30px"></div>
@@ -318,10 +302,10 @@
 
                         <!--Third row-->
                         <div class="row">
-                            <div class="col-xs-2">
+                            <div class="col-2">
                                 <i class="fa fa-glass cyan-text"></i>
                             </div>
-                            <div class="col-xs-10">
+                            <div class="col-10">
                                 <h4 class="feature-title">Relaxing</h4>
                                 <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
                                 <div style="height:30px"></div>
@@ -333,7 +317,7 @@
 
                     <!--Second column-->
                     <div class="col-md-4 m-b-r center-on-small-only wow fadeIn" data-wow-delay="0.3s">
-                        <img src="http://mdbootstrap.com/images/mockups/header-iphone.png" alt="" class="z-depth-0">
+                        <img src="https://mdbootstrap.com/images/mockups/header-iphone.png" alt="" class="z-depth-0">
                     </div>
                     <!--/Second column-->
 
@@ -341,10 +325,10 @@
                     <div class="col-md-4 wow fadeIn" data-wow-delay="0.4s">
                         <!--First row-->
                         <div class="row">
-                            <div class="col-xs-2">
+                            <div class="col-2">
                                 <i class="fa fa-heart red-text"></i>
                             </div>
-                            <div class="col-xs-10">
+                            <div class="col-10">
                                 <h4 class="feature-title">Beloved</h4>
                                 <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
                                 <div style="height:30px"></div>
@@ -354,10 +338,10 @@
 
                         <!--Second row-->
                         <div class="row">
-                            <div class="col-xs-2">
+                            <div class="col-2">
                                 <i class="fa fa-flash orange-text"></i>
                             </div>
-                            <div class="col-xs-10">
+                            <div class="col-10">
                                 <h4 class="feature-title">Rapid</h4>
                                 <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
                                 <div style="height:30px"></div>
@@ -367,10 +351,10 @@
 
                         <!--Third row-->
                         <div class="row">
-                            <div class="col-xs-2">
+                            <div class="col-2">
                                 <i class="fa fa-magic lime-text"></i>
                             </div>
-                            <div class="col-xs-10">
+                            <div class="col-10">
                                 <h4 class="feature-title">Magical</h4>
                                 <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
                                 <div style="height:30px"></div>
@@ -388,7 +372,7 @@
             <hr class="between-sections">
             
             <!--Projects section v.3-->
-            <section class="section text-xs-center" id="examples-of-use">
+            <section class="section text-center" id="examples-of-use">
 
                 <!--Section heading-->
                 <h1 class="section-heading wow fadeIn" data-wow-delay="0.2s">Our best projects</h1>
@@ -399,11 +383,11 @@
                 <div class="row">
 
                     <!--First column-->
-                    <div class="col-md-6 m-b-r wow fadeInLeft">
+                    <div class="col-md-6 mb-r wow fadeInLeft">
 
                         <!--Featured image-->
                         <div class="view overlay hm-white-slight z-depth-2">
-                            <img src="http://mdbootstrap.com/images/regular/city/img%20(5).jpg">
+                            <img src="https://mdbootstrap.com/images/regular/city/img%20(5).jpg">
                             <a>
                                 <div class="mask"></div>
                             </a>
@@ -421,11 +405,11 @@
                     <!--/First column-->
 
                     <!--Second column-->
-                    <div class="col-md-6 m-b-r wow fadeInRight">
+                    <div class="col-md-6 mb-r wow fadeInRight">
 
                         <!--Featured image-->
                         <div class="view overlay hm-white-slight z-depth-2">
-                            <img src="http://mdbootstrap.com/images/regular/city/img%20(6).jpg">
+                            <img src="https://mdbootstrap.com/images/regular/city/img%20(6).jpg">
                             <a>
                                 <div class="mask"></div>
                             </a>
@@ -449,11 +433,11 @@
                 <div class="row">
 
                     <!--First column-->
-                    <div class="col-md-6 m-b-r wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="col-md-6 mb-r wow fadeInLeft" data-wow-delay="0.2s">
 
                         <!--Featured image-->
                         <div class="view overlay hm-white-slight z-depth-2">
-                            <img src="http://mdbootstrap.com/images/regular/city/img%20(26).jpg">
+                            <img src="https://mdbootstrap.com/images/regular/city/img%20(26).jpg">
                             <a>
                                 <div class="mask"></div>
                             </a>
@@ -471,11 +455,11 @@
                     <!--/First column-->
 
                     <!--Second column-->
-                    <div class="col-md-6 m-b-r wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="col-md-6 mb-r wow fadeInRight" data-wow-delay="0.2s">
 
                         <!--Featured image-->
                         <div class="view overlay hm-white-slight z-depth-2">
-                            <img src="http://mdbootstrap.com/images/regular/city/img%20(25).jpg">
+                            <img src="https://mdbootstrap.com/images/regular/city/img%20(25).jpg">
                             <a>
                                 <div class="mask"></div>
                             </a>
@@ -535,7 +519,7 @@
                                     <div class="testimonial">
                                         <!--Avatar-->
                                         <div class="avatar">
-                                            <img src="http://mdbootstrap.com/images/avatars/img%20(1).jpg" class="img-circle img-fluid">
+                                            <img src="https://mdbootstrap.com/images/avatars/img%20(1).jpg" class="rounded-circle img-fluid">
                                         </div>
                                         <!--Content-->
                                         <h4>Anna Deynah</h4>
@@ -560,7 +544,7 @@
                                     <div class="testimonial">
                                         <!--Avatar-->
                                         <div class="avatar">
-                                            <img src="http://mdbootstrap.com/images/avatars/img%20(3).jpg" class="img-circle img-fluid">
+                                            <img src="https://mdbootstrap.com/images/avatars/img%20(3).jpg" class="rounded-circle img-fluid">
                                         </div>
                                         <!--Content-->
                                         <h4>John Doe</h4>
@@ -584,7 +568,7 @@
                                     <div class="testimonial">
                                         <!--Avatar-->
                                         <div class="avatar">
-                                            <img src="http://mdbootstrap.com/images/avatars/img%20(5).jpg" class="img-circle img-fluid">
+                                            <img src="https://mdbootstrap.com/images/avatars/img%20(5).jpg" class="rounded-circle img-fluid">
                                         </div>
                                         <!--Content-->
                                         <h4>Abbey Clark</h4>
@@ -614,7 +598,7 @@
                                     <div class="testimonial">
                                         <!--Avatar-->
                                         <div class="avatar">
-                                            <img src="http://mdbootstrap.com/images/avatars/img%20(4).jpg" class="img-circle img-fluid">
+                                            <img src="https://mdbootstrap.com/images/avatars/img%20(4).jpg" class="rounded-circle img-fluid">
                                         </div>
                                         <!--Content-->
                                         <h4>Blake Dabney</h4>
@@ -639,7 +623,7 @@
                                     <div class="testimonial">
                                         <!--Avatar-->
                                         <div class="avatar">
-                                            <img src="http://mdbootstrap.com/images/avatars/img%20(6).jpg" class="img-circle img-fluid">
+                                            <img src="https://mdbootstrap.com/images/avatars/img%20(6).jpg" class="rounded-circle img-fluid">
                                         </div>
                                         <!--Content-->
                                         <h4>Andrea Clay</h4>
@@ -663,7 +647,7 @@
                                     <div class="testimonial">
                                         <!--Avatar-->
                                         <div class="avatar">
-                                            <img src="http://mdbootstrap.com/images/avatars/img%20(7).jpg" class="img-circle img-fluid">
+                                            <img src="https://mdbootstrap.com/images/avatars/img%20(7).jpg" class="rounded-circle img-fluid">
                                         </div>
                                         <!--Content-->
                                         <h4>Cami Gosse</h4>
@@ -693,7 +677,7 @@
                                     <div class="testimonial">
                                         <!--Avatar-->
                                         <div class="avatar">
-                                            <img src="http://mdbootstrap.com/images/avatars/img%20(8).jpg" class="img-circle img-fluid">
+                                            <img src="https://mdbootstrap.com/images/avatars/img%20(8).jpg" class="rounded-circle img-fluid">
                                         </div>
                                         <!--Content-->
                                         <h4>Bobby Haley</h4>
@@ -718,7 +702,7 @@
                                     <div class="testimonial">
                                         <!--Avatar-->
                                         <div class="avatar">
-                                            <img src="http://mdbootstrap.com/images/avatars/img%20(10).jpg" class="img-circle img-fluid">
+                                            <img src="https://mdbootstrap.com/images/avatars/img%20(10).jpg" class="rounded-circle img-fluid">
                                         </div>
                                         <!--Content-->
                                         <h4>Elisa Janson</h4>
@@ -742,7 +726,7 @@
                                     <div class="testimonial">
                                         <!--Avatar-->
                                         <div class="avatar">
-                                            <img src="http://mdbootstrap.com/images/avatars/img%20(9).jpg" class="img-circle img-fluid">
+                                            <img src="https://mdbootstrap.com/images/avatars/img%20(9).jpg" class="rounded-circle img-fluid">
                                         </div>
                                         <!--Content-->
                                         <h4>Robert Jacobs</h4>
@@ -770,7 +754,7 @@
                     </div>
                     <!--/.Carousel Wrapper-->
                 </div>
-</section>
+            </section>
             <!--/Section: Testimonials v.4-->
 
             <hr class="between-sections">
@@ -787,7 +771,7 @@
             <div class="row">
 
                 <!--First column-->
-                <div class="col-lg-4 col-md-6 m-b-r wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="col-lg-4 col-md-6 mb-r wow fadeInLeft" data-wow-delay="0.2s">
 
                     <!--Pricing card-->
                     <div class="card pricing-card">
@@ -831,7 +815,7 @@
                 <!--/First column-->
 
                 <!--Second column-->
-                <div class="col-lg-4 col-md-6 m-b-r wow fadeInLeft" data-wow-delay="0.3s">
+                <div class="col-lg-4 col-md-6 mb-r wow fadeInLeft" data-wow-delay="0.3s">
 
                     <!--Pricing card-->
                     <div class="card pricing-card">
@@ -875,7 +859,7 @@
                 <!--/Second column-->
 
                 <!--Third column-->
-                <div class="col-lg-4 col-md-6 m-b-r wow fadeInLeft" data-wow-delay="0.4s">
+                <div class="col-lg-4 col-md-6 mb-r wow fadeInLeft" data-wow-delay="0.4s">
                     <!--Pricing card-->
                     <div class="card pricing-card">
                         <!--Price-->
@@ -925,12 +909,12 @@
             <hr class="between-sections">
 
             <!--Section: Contact v.1-->
-            <section class="section m-b-4" id="contact">
+            <section class="section mb-4" id="contact">
 
                 <!--Section heading-->
                 <h1 class="section-heading wow fadeIn" data-wow-delay="0.2s">Contact</h1>
                 <!--Section description-->
-                <p class="section-description m-b-5 wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+                <p class="section-description mb-5 wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
 
                 <div class="row">
 
@@ -974,7 +958,7 @@
                                     <label for="form8">Icon Prefix</label>
                                 </div>
 
-                                <div class="text-xs-center">
+                                <div class="text-center">
                                     <button class="btn btn-secondary">Submit</button>
                                 </div>
 
@@ -994,7 +978,7 @@
 
                         <br>
                         <!--Buttons-->
-                        <div class="row text-xs-center">
+                        <div class="row text-center">
                             <div class="col-md-4 wow fadeInRight" data-wow-delay="0.3s">
                                 <a class="btn-floating btn-small purple"><i class="fa fa-map-marker"></i></a>
                                 <p>New York, NY 10012</p>
@@ -1019,7 +1003,7 @@
 
                 </div>
 
-</section>
+            </section>
             <!--/Section: Contact v.1-->
         
         </div>
@@ -1071,7 +1055,7 @@
     <!-- SCRIPTS -->
 
     <!-- JQuery -->
-    <script type="text/javascript" src="../../../js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="../../../js/jquery-3.1.1.min.js"></script>
 
     <!-- Tooltips -->
     <script type="text/javascript" src="../../../js/tether.min.js"></script>

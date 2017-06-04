@@ -14,8 +14,20 @@
         border-bottom-right-radius: 0;
         @extend .img-fluid;
     }
+    .card-block {
+        position:relative;
+    }
     .card-footer {
         padding-bottom: 0;
+        font-size:1.2rem;
+        &:after {
+            display:block;
+            content: "";
+            clear:both;
+        }
+        .card-link {
+            color: inherit;
+        }
     }
 }
 
@@ -40,4 +52,39 @@
     &.m-3 {
         margin-top: -40px;
     }
+}
+
+// .list-group fix
+.list-group-item {
+    width:100%;
+}
+
+// edge header
+.edge-header {
+    display:block;
+    height:278px;
+    background-color:#ccc;
+}
+
+.free-bird {
+    margin-top:-100px; 
+}
+
+// Form sets
+
+.card .form-header {
+    color: #fff;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    @extend .z-depth-1-half;
+    @include border-radius(2px);
+    h3 {
+        margin: 0;
+        padding: 0.7rem;
+    }
+}
+.call .fa {
+    margin-right: 5px;
 }

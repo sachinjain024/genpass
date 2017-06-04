@@ -26,9 +26,28 @@
     text-align: center;
     .carousel-control {
         background-image: none;
-        color: black;
-        span {
+        top:50%;
+        transform: translateY(-35%);
+        &:before {
             font-size: 5rem;
+            color: rgba(0,0,0,.6);
+        }
+        &:hover {
+            &:before {
+                color: #000;
+            }
+        }
+        &.left {
+            left:6%;
+            &:before {
+                content: "\2039";
+            }
+        }
+        &.right {
+            right:6%;
+            &:before {
+                content: "\203a";
+            }
         }
     }
     .testimonial {

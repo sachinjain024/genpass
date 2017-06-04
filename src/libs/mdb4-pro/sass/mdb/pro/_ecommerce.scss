@@ -1,7 +1,7 @@
 // E-COMMERCE
 // Product card
 .product-card {
-    .tag {
+    .badge {
         position: absolute;
         left: 0;
         top: 0;
@@ -78,7 +78,7 @@
         text-align: center;
     }
     .price {
-        .tag {
+        .badge {
             background-color: $rgba-red-strong;
             font-size: 1.4rem;
             display: inline-block;

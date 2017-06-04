@@ -4,7 +4,8 @@
         .avatar {
             margin-bottom: 2rem;
             @extend .flex-center;
-            .img-circle {
+            height:auto;
+            .rounded-circle {
                 max-width: 200px;
             }
         }

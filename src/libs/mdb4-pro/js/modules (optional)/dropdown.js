@@ -252,7 +252,7 @@ var dropdownSelectors = $('.dropdown, .dropup');
             var parentUl = dropdown.parents('ul.nav');
 
             // If parent is ul.nav allow global effect settings
-            if (parentUl.size() > 0) {
+            if (parentUl.height > 0) {
                 effectInDefault = parentUl.data('dropdown-in') || null;
                 effectOutDefault = parentUl.data('dropdown-out') || null;
             }
@@ -316,6 +316,7 @@ var dropdownSelectors = $('.dropdown, .dropup');
                     dropdownEffectStart(dropdown, dropdown.effectOut);
                     dropdownEffectEnd(dropdown, function () {
                         dropdown.dropdown.removeClass('open');
+                        dropdown.dropdown.removeClass('show');                        
                     });
                 }
             },

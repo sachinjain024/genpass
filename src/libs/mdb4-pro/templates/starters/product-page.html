@@ -34,6 +34,7 @@
         }
         
         .reviews {
+            width: 100%;
             text-align: center;
             border-top: 1px solid #e0e0e0;
             border-bottom: 1px solid #e0e0e0;
@@ -49,7 +50,7 @@
             margin-top: -2px;
         }
         
-        .price .label {
+        .price .tag {
             margin: 0;
         }
     </style>
@@ -62,43 +63,39 @@
     <header>
 
         <!--Navbar-->
-        <nav class="navbar navbar-dark primary-color-dark">
-
-            <!-- Collapse button-->
-            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
-                <i class="fa fa-bars"></i>
-            </button>
-
+        <nav class="navbar navbar-toggleable-md navbar-dark bg-primary primary-color-dark">
+           
             <div class="container">
-
-                <!--Collapse content-->
-                <div class="collapse navbar-toggleable-xs" id="collapseEx">
-                    <!--Navbar Brand-->
-                    <a class="navbar-brand" href="http://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">MDB</a>
-                    <!--Links-->
-                    <ul class="nav navbar-nav">
+               
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand waves-effect waves-light" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">MDB</a>
+                
+                <div class="collapse navbar-collapse" id="navbarNav1">
+                   
+                    <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link">About</a>
                         </li>
                     </ul>
-                    <!--Search form-->
-                    <form class="form-inline">
+                    <form class="form-inline waves-effect waves-light">
                         <input class="form-control" type="text" placeholder="Search">
                     </form>
+                    
                 </div>
-                <!--/.Collapse content-->
-
+                
             </div>
-
+            
         </nav>
         <!--/.Navbar-->
 
@@ -111,7 +108,7 @@
             <div class="row">
 
                 <!--Sidebar-->
-                <div class="col-md-4">
+                <div class="col-lg-4">
 
                     <div class="widget-wrapper">
                         <h4>Categories:</h4>
@@ -152,7 +149,7 @@
                 <!--/.Sidebar-->
 
                 <!--Main column-->
-                <div class="col-md-8">
+                <div class="col-lg-8">
 
                     <!--First row-->
                     <div class="row">
@@ -162,10 +159,10 @@
 
                                 <!--Featured image-->
                                 <div class="view overlay hm-white-light z-depth-1-half">
-                                    <img src="http://mdbootstrap.com/images/ecommerce/slides/slide%20(3).jpg" class="img-fluid " alt="">
+                                    <img src="https://mdbootstrap.com/images/ecommerce/slides/slide%20(3).jpg" class="img-fluid " alt="">
                                     <div class="mask">
                                     </div>
-                                    <h3 class="price"><span class="label rgba-green-strong">10 $</span></h3>
+                                    <h3 class="price"><span class="badge rgba-green-strong">10 $</span></h3>
                                 </div>
                                 <!--/.Featured image-->
 
@@ -196,14 +193,14 @@
                     <div class="row">
 
                         <!--Heading-->
-                        <div class="reviews">
+                        <div class="reviews mx-auto">
                             <h2 class="h2-responsive">Reviews</h2>
                         </div>
 
                         <!--First review-->
                         <div class="media">
                             <a class="media-left" href="#">
-                                <img class="img-circle" src="http://mdbootstrap.com/wp-content/uploads/2015/10/team-avatar-1.jpg" alt="Generic placeholder image">
+                                <img class="rounded-circle" src="https://mdbootstrap.com/wp-content/uploads/2015/10/team-avatar-1.jpg" alt="Generic placeholder image">
                             </a>
                             <div class="media-body">
                                 <h4 class="media-heading">John Doe</h4>
@@ -221,7 +218,7 @@
                         <!--Second review-->
                         <div class="media">
                             <a class="media-left" href="#">
-                                <img class="img-circle" src="http://mdbootstrap.com/wp-content/uploads/2015/10/team-avatar-2.jpg" alt="Generic placeholder image">
+                                <img class="rounded-circle" src="https://mdbootstrap.com/wp-content/uploads/2015/10/team-avatar-2.jpg" alt="Generic placeholder image">
                             </a>
                             <div class="media-body">
                                 <h4 class="media-heading">Nathan Casie</h4>
@@ -239,7 +236,7 @@
                         <!--Second review-->
                         <div class="media">
                             <a class="media-left" href="#">
-                                <img class="img-circle" src="http://mdbootstrap.com/wp-content/uploads/2015/10/team-avatar-3.jpg" alt="Generic placeholder image">
+                                <img class="rounded-circle" src="https://mdbootstrap.com/wp-content/uploads/2015/10/team-avatar-3.jpg" alt="Generic placeholder image">
                             </a>
                             <div class="media-body">
                                 <h4 class="media-heading">Dave Snow</h4>
@@ -274,7 +271,7 @@
             <div class="row">
 
                 <!--First column-->
-                <div class="col-md-3 col-md-offset-1">
+                <div class="col-md-3 offset-lg-1 hidden-lg-down">
                     <h5 class="title">ABOUT MATERIAL DESIGN</h5>
                     <p>Material Design (codenamed Quantum Paper) is a design language developed by Google. </p>
 
@@ -285,7 +282,7 @@
                 <hr class="hidden-md-up">
 
                 <!--Second column-->
-                <div class="col-md-2 col-md-offset-1">
+                <div class="col-lg-2 col-md-4 offset-lg-1">
                     <h5 class="title">First column</h5>
                     <ul>
                         <li><a href="#!">Link 1</a></li>
@@ -299,7 +296,7 @@
                 <hr class="hidden-md-up">
 
                 <!--Third column-->
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-4">
                     <h5 class="title">Second column</h5>
                     <ul>
                         <li><a href="#!">Link 1</a></li>
@@ -313,7 +310,7 @@
                 <hr class="hidden-md-up">
 
                 <!--Fourth column-->
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-4">
                     <h5 class="title">Third column</h5>
                     <ul>
                         <li><a href="#!">Link 1</a></li>
@@ -336,8 +333,8 @@
             <ul>
                 <li>
                     <h5>Get our UI KIT for free</h5></li>
-                <li><a target="_blank" href="http://mdbootstrap.com/getting-started/" class="btn btn-danger">Sign up!</a></li>
-                <li><a target="_blank" href="http://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-default">Learn more</a></li>
+                <li><a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-danger">Sign up!</a></li>
+                <li><a target="_blank" href="https://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-default">Learn more</a></li>
             </ul>
         </div>
         <!--/.Call to action-->
@@ -358,7 +355,7 @@
     <!-- SCRIPTS -->
 
     <!-- JQuery -->
-    <script type="text/javascript" src="../../js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-3.1.1.min.js"></script>
 
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="../../js/tether.min.js"></script>

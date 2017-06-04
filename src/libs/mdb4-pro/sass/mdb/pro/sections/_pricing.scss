@@ -9,9 +9,10 @@
     .price {
         position: relative;
         padding-top: 3rem;
-        h1 {
+        h1, h2 {
             font-size: 5rem;
             padding: 1.5rem;
+            font-weight:300;
             &:before {
                 content: "$";
                 font-size: 30px;

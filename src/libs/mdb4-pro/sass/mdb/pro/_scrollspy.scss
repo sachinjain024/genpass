@@ -18,7 +18,7 @@
     }
     &:hover {
         background-color: transparent;
-        color: $mdb-color;
+        color: $mdb-color; 
         font-weight: 500;
         border-left: 1px solid $mdb-color;
     }
@@ -28,10 +28,10 @@
     margin-left: 0;
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 991px) {
     .sticky,
     .sticky-placeholder {
-        display: none;
+        display: none; 
     }
 }
 
@@ -39,14 +39,14 @@
     width: 120px;
 }
 @media only screen and (max-width: 992px) {
-    .col-md-4 .sticky {
+    .col-md-4 .sticky, .col-lg-4 .sticky, .col-xl-4 .sticky {
         width: 200px;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .col-md-4 .sticky {
-        width: 240px;
+    .col-md-4 .sticky  .col-lg-4 .sticky, .col-xl-4 .sticky {
+        width: 400px;
     }
 }
 
@@ -63,3 +63,38 @@
     }
 }
 
+// Dotted scrollspy
+
+.dotted-scrollspy {
+    display:block;
+    position: fixed;
+    top:50%;
+    right:0;
+    @include transform(translateY(-50%));
+    background: rgba(0,0,0,.55);
+    @include border-radius(2px 0 0 2px);
+    li {
+        display:block;
+        padding:0 16px;
+        &:first-child {
+            padding-top:10px;
+        }
+        &:last-child {
+            padding-bottom: 10px;
+        }
+        a {
+            span {
+                display:block;
+                background-color:rgba(255,255,255,.54);
+                width:8px;
+                height:8px;
+                border-radius:50%;
+            }
+            &.active {
+                span {
+                    background:#fff;
+                }
+            }
+        }
+    }
+}

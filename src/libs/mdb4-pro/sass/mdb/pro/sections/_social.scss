@@ -1,0 +1,185 @@
+//Social feed
+.mdb-feed {
+    margin: 1rem 0 1rem 0;
+    .news {
+        display: flex;
+        .label {
+            display: block;
+            flex: 0 0 auto;
+            align-self: stretch;
+            width: 2.5rem;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .excerpt {
+            display: block;
+            flex: 1 1 auto;
+            align-self: stretch;
+            word-wrap: break-word;
+            margin: 0 0 1.2rem 1.2rem;
+            .brief {
+                padding-bottom: 0.5rem;
+                font-weight: 500;
+                a {
+                    color: #4285F4;
+                }
+                .name {
+                    display: inline-block;
+                    vertical-align: baseline; 
+                }
+                .date {
+                    display: inline-block;
+                    float: none;
+                    padding-left: 0.7rem;
+                    font-weight: 300;
+                    font-size: 0.86rem;
+                    color: #9e9e9e;
+                }
+            }
+            .added-images {
+                margin-bottom: 0.6rem;
+                img {
+                    display: inline-block;
+                    margin-right: 0.3rem;
+                    width: 7rem;
+                }
+            }
+            .added-text {
+                margin-bottom: 0.6rem;
+                max-width: 450px;
+            }
+            .feed-footer {
+                .like {
+                    font-weight: 300;
+                    font-size: 0.86rem;
+                    color: #9e9e9e;
+                    &:hover {
+                        .fa {
+                            color: #f44336;
+                            transition: 0.4s;
+                        }
+                        span {
+                            color: #000;
+                            transition: 0.4s;
+                        }
+                    }
+                    .fa { 
+                        padding-right: 0.5rem;
+                    }
+                }
+                span a {
+                        padding-right: 0.3rem;
+                        color: #4285F4;
+                        cursor: default;
+                    } 
+                .thumbs {
+                    .fa {
+                        color: #9e9e9e;
+                        transition: 0.4s;
+                        &:hover {
+                            color: #757575;
+                        }
+                    }
+                    .fa-thumbs-up {
+                        padding-right: 0.3rem;
+                    }
+                }
+                .comment {
+                    color: #9e9e9e;
+                }
+            }
+        }
+    }
+}
+
+//Card
+.card-personal {
+    .card-block {
+        .card-title {
+            font-weight: 400;
+            &.title-one {
+                transition: 0.4s;
+                &:hover {
+                    color: #4285F4;
+                }
+            }
+        }
+        .card-title {
+            margin-bottom: 0.3rem;
+        }
+        .card-meta {
+            font-weight: 300;
+            font-size: 0.86rem;
+            color: #757575;
+            .fa {
+                padding-right: 0.5rem;
+            } 
+        }
+        span {
+            transition: 0.5s;
+            &:hover {
+                color: #4285F4;
+            }
+        }
+    }
+}
+
+//News card
+.news-card {
+    .content {
+        .right-side-meta {
+            float: right;
+            font-weight: 300;
+            color: #9e9e9e;
+            margin-top: 0.3rem;
+        }
+        .avatar-img {
+            width: 2rem;
+            margin-right: 1rem;
+        }
+        img {
+            border-radius: 50%;
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 100%;
+        }
+    }
+    .social-meta {
+        .fa {
+            padding-right: 0.6rem;
+        }
+        .fa-heart-o {
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0.5); 
+            transition: 0.53s;
+            &:hover {
+                color: #f44336;
+            }
+        }
+        span {
+            float: right;
+        }
+    }
+    .md-form {
+        margin-top: 1.3rem;
+        margin-bottom: 0.3rem;
+        .prefix {
+            font-size: 1.5rem;
+            margin-left: 0.2rem;
+            color: rgba(0, 0, 0, 0.4); 
+        }
+        .prefix.active {
+            color: rgba(0, 0, 0, 0.4); 
+        }
+        .form-control {
+            padding-top: 0;
+            padding-bottom: 0.5rem;
+            margin-left: 3rem;
+            margin-bottom: 0;
+            height: 1.3rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+    }
+}

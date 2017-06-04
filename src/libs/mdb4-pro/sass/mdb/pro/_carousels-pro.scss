@@ -3,14 +3,15 @@
     margin-bottom: 100px;
     .carousel-indicators li {
         height: 20px;
-        width: 20px;
+        max-width: 20px;
         background-color: $primary-color;
         margin-bottom: -60px;
     }
     .carousel-indicators .active {
         height: 25px;
-        width: 25px;
+        max-width: 25px;
         background-color: $primary-color;
+        @include border-radius(50%);
     }
     .controls-top {
         text-align: center;
@@ -43,11 +44,11 @@
 .carousel-thumbnails {
     margin-bottom: 80px;
     .carousel-indicators {
-        margin-bottom: -90px;
+        margin-bottom: -75px;
         position: absolute;
         li {
             height: auto;
-            width: auto;
+            max-width: 100px;
             border: none;
         }
         .active {
@@ -57,7 +58,7 @@
             opacity: 0.5;
         }
         img {
-            width: 100px;
+            max-width: 100px;
             height: 50px;
             overflow: hidden;
         }
@@ -70,7 +71,7 @@
         .carousel-indicators {
             margin-bottom: -60px;
             img {
-            width: 50px;
+            max-width: 50px;
             height: 25px;
         }
         }

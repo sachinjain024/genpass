@@ -391,6 +391,20 @@
         margin: 0 0 15px 0;
         padding: 0;
         display: block;
+
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        -o-user-select:none;
+        user-select:none;
+
+    }
+    .select-dropdown {
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        -o-user-select:none;
+        user-select:none;
     }
     span.caret {
         color: initial;
@@ -801,29 +815,55 @@ input[type=range]:focus::-ms-fill-upper {
             height: 13px;
         }
         [type="radio"] + label {
-            padding-left: 24px;
+            padding-left: 24px; 
             height: 13px;
         }
-    }
-    // Style Placeholders
-    ::-webkit-input-placeholder {
-        padding-left: 1rem;
-    }
-    :-moz-placeholder {
-        /* Firefox 18- */
-        padding-left: 1rem;
-    }
-    ::-moz-placeholder {
-        /* Firefox 19+ */
-        padding-left: 1rem;
-    }
-    :-ms-input-placeholder {
-        padding-left: 1rem;
+        // Style Placeholders
+        @include placeholder {
+            padding-left: 1rem;
+        }
     }
     span {
         z-index: 10;
     }
     .form-control {
         margin-top: 3px;
+    }
+}
+
+// MDB Autocomplete
+.mdb-autocomplete {
+    margin-bottom: 1px;
+}
+
+.mdb-autocomplete-clear {
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0.85rem;
+    background: transparent;
+    border: none;
+    svg {
+        fill: #a6a6a6;
+    }
+}
+
+.mdb-autocomplete-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .25);
+    z-index: 100;
+    max-height: 210px;
+    overflow-y: auto;
+    li {
+        cursor: pointer;
+        padding: 12px 15px;
+        font-size: 0.875rem;
+        &:hover {
+            background: rgb(238, 238, 238);
+        }
     }
 }

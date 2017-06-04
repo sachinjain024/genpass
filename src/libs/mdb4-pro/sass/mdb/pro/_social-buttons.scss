@@ -133,6 +133,21 @@
     }
 }
 
+.btn-so {
+    background-color: $so-color;
+    &:hover,
+    &:focus {
+        background-color: lighten($so-color, 5%);
+    }
+}
+
+.btn-slack {
+    background-color: $slack-color;
+    &:hover,
+    &:focus {
+        background-color: lighten($slack-color, 5%);
+    }
+}
 
 /* Icons */
 
@@ -246,6 +261,21 @@
     } 
 }
 
+.so-ic {
+   color: $so-color!important;
+    &:hover,
+    &:focus {
+        color: $so-color;
+    } 
+}
+
+.slack-ic {
+   color: $slack-color!important;
+    &:hover,
+    &:focus {
+        color: $slack-color;
+    } 
+}
 
 /* Social list */
 

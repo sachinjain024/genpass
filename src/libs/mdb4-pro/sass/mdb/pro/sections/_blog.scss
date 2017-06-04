@@ -19,7 +19,7 @@
 .comments-list,
 .reply-form {
     margin-bottom: 3rem;
-    .tag {
+    .badge {
         @extend .z-depth-1-half;
     }
     img {
@@ -53,12 +53,15 @@
             text-align: left;
         }
     }
+    .text-center {
+        flex:1;
+    }
 }
 
 // Full width blog section
 .section-blog-fw {
     .view {
-        @extend .z-depth-2;
+        @extend .z-depth-1;
     }
     .jumbotron {
         @extend .m-1;

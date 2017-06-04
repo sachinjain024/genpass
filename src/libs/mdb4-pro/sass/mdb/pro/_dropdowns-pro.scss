@@ -170,40 +170,70 @@
         &.dd-right { 
             left: -100px;
         }
-        &.dropdown-primary .dropdown-item:hover {
-            background-color: $primary-color;
+        &.dropdown-primary .dropdown-item {
+            &:hover,
+            &:active {
+                background-color: $primary-color;
+            }
         }
-        &.dropdown-danger .dropdown-item:hover {
-            background-color: $danger-color-dark;
+        &.dropdown-danger .dropdown-item {
+            &:hover,
+            &:active {
+                background-color: $danger-color-dark;
+            }
         }
-        &.dropdown-default .dropdown-item:hover {
-            background-color: $default-color;
+        &.dropdown-default .dropdown-item {
+            &:hover,
+            &:active {
+                background-color: $default-color;
+            }
         }
-        &.dropdown-secondary .dropdown-item:hover {
-            background-color: $secondary-color;
+        &.dropdown-secondary .dropdown-item {
+            &:hover,
+            &:active {
+                background-color: $secondary-color;
+            }
         }
-        &.dropdown-success .dropdown-item:hover {
-            background-color: $success-color;
+        &.dropdown-success .dropdown-item {
+            &:hover,
+            &:active {
+                background-color: $success-color;
+            }
         }
-        &.dropdown-info .dropdown-item:hover {
-            background-color: $info-color;
+        &.dropdown-info .dropdown-item {
+            &:hover,
+            &:active {
+                background-color: $info-color;
+            }
         }
-        &.dropdown-warning .dropdown-item:hover {
-            background-color: $warning-color-dark;
+        &.dropdown-warning .dropdown-item {
+            &:hover,
+            &:active {
+                background-color: $warning-color-dark;
+            }
         }
-        &.dropdown-ins .dropdown-item:hover {
-            background-color: $ins-color;
+        &.dropdown-ins .dropdown-item {
+            &:hover,
+            &:active {
+                background-color: $ins-color;
+            }
         }
-         &.dropdown-dark .dropdown-item:hover {
-            background-color: $elegant-color;
+        &.dropdown-dark .dropdown-item {
+            &:hover,
+            &:active {
+                background-color: $elegant-color;
+            }
         }
         .dropdown-item {
             padding: 1rem;
-            &:hover {
+            margin-left:0;
+            &:hover,
+            &:active {
                 border-radius: 2px;
                 color: #fff!important;
                 transition: all 0.1s linear;
                 @extend .z-depth-2;
+                background-color: $primary-color;
             }
         }
     }

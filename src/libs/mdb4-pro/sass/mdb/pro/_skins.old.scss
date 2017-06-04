@@ -1,0 +1,3837 @@
+// Skins
+$blue-skin-color: #062A64;
+$green-skin-color: #003830;
+$purple-skin-color: #650696;
+$deep-orange-skin-color: #8A1A00;
+$pink-skin-color: #c2185b;
+$light-grey-skin-color: #757575;
+// Blue skin
+.blue-skin {
+    .primary-color {
+        background-color: $blue-skin-color!important;
+    }
+    .navbar,
+    .page-footer {
+        background-color: lighten( $blue-skin-color, 2%);
+    }
+    .side-nav {
+        @extend .blue-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/sidenavs/blue.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid lighten( $primary-color, 5%);
+        }
+        .social a {
+            &:hover {
+                background-color: lighten( $blue-skin-color, 0%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: $blue-skin-color;
+                }
+                &:hover {
+                    background-color: lighten( $blue-skin-color, 1%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: lighten( $blue-skin-color, 0%);
+    }
+    .btn-primary {
+        background: $primary-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $primary-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $primary-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #5C4AF5;
+        &:hover,
+        &:focus {
+            background-color: lighten( #5C4AF5, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #5C4AF5, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: $primary-color-dark;
+        &:hover,
+        &:focus {
+            background-color: lighten( $primary-color-dark, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $primary-color-dark, 20%)!important;
+        }
+    }
+    .btn-outline-primary {
+        border: 2px solid $primary-color!important;
+        color: $primary-color!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid $primary-color!important;
+            color: $primary-color!important;
+        }
+    }
+    .btn-outline-secondary {
+        border: 2px solid #5C4AF5!important;
+        color: #5C4AF5!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid #5C4AF5!important;
+            color: #5C4AF5!important;
+        }
+    }
+    .btn-outline-default {
+        border: 2px solid $primary-color-dark!important;
+        color: $primary-color-dark!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid $primary-color-dark!important;
+            color: $primary-color-dark!important;
+        }
+    }
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+            &:after {
+                background-color: $primary-color-dark;
+                border-color: $primary-color-dark;
+            }
+        }
+    }
+    .top-nav-collapse {
+        background-color: lighten( $blue-skin-color, 2%);
+    }
+    .carousel-multi-item {
+        .controls-top>a,
+        .carousel-indicators li,
+        .carousel-indicators li.active {
+            background-color: lighten( $blue-skin-color, 2%);
+        }
+    }
+    .tag,
+    .form-header,
+    .card-header {
+        background-color: lighten( $blue-skin-color, 2%);
+    }
+}
+
+// Red skin
+.red-skin {
+    .primary-color {
+        background-color: #79000C!important;
+    }
+    .navbar {
+        background-color: darken( $danger-color-dark, 10%);
+    }
+    .page-footer {
+        background-color: darken( $danger-color-dark, 25%);
+    }
+    .side-nav {
+        @extend .red-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/sidenavs/red.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $danger-color-dark, 25%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $danger-color-dark, 25%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: darken( $danger-color-dark, 25%);
+                }
+                &:hover {
+                    background-color: darken( $danger-color-dark, 25%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: darken( $danger-color-dark, 10%);
+    }
+    .btn-primary {
+        background: $danger-color-dark;
+        &:hover,
+        &:focus {
+            background-color: lighten( $danger-color-dark, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $danger-color-dark, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #7D2900;
+        &:hover,
+        &:focus {
+            background-color: lighten( #7D2900, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #7D2900, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #79000C;
+        &:hover,
+        &:focus {
+            background-color: lighten( #79000C, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #79000C, 20%)!important;
+        }
+    }
+    .btn-outline-primary {
+        border: 2px solid $danger-color-dark!important;
+        color: $danger-color-dark!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid $danger-color-dark!important;
+            color: $danger-color-dark!important;
+        }
+    }
+    .btn-outline-secondary {
+        border: 2px solid #7D2900!important;
+        color: #7D2900!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid #7D2900!important;
+            color: #7D2900!important;
+        }
+    }
+    .btn-outline-default {
+        border: 2px solid #79000C!important;
+        color: #79000C!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid #79000C!important;
+            color: #79000C!important;
+        }
+    }
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]),
+    input[type="text"]:focus:not([readonly]),
+    input[type="password"]:focus:not([readonly]),
+    textarea.md-textarea:focus:not([readonly]) {
+        border-color: $danger-color-dark;
+        box-shadow: 0 1px 0 0 $danger-color-dark;
+        &+label {
+            color: $danger-color-dark;
+        }
+    }
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $danger-color-dark;
+                border-bottom: 2px solid $danger-color-dark;
+            }
+        }
+    }
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+            &:after {
+                background-color: $danger-color-dark;
+                border-color: $danger-color-dark;
+            }
+        }
+    }
+    .md-form {
+        .prefix {
+            &.active {
+                color: $danger-color-dark;
+            }
+        }
+    }
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $danger-color-dark;
+            }
+        }
+    }
+    .top-nav-collapse {
+        background-color: darken( $danger-color-dark, 10%);
+    }
+    .carousel-multi-item {
+        .controls-top>a,
+        .carousel-indicators li,
+        .carousel-indicators li.active {
+            background-color: darken( $danger-color-dark, 10%);
+        }
+    }
+    .tag,
+    .form-header,
+    .card-header {
+        background-color: darken( $danger-color-dark, 10%);
+    }
+}
+
+// Green skin
+.green-skin {
+    .primary-color {
+        background-color: #003830!important;
+    }
+    .navbar {
+        background-color: darken( $green-skin-color, 0%);
+    }
+    .page-footer {
+        background-color: darken( $green-skin-color, 5%);
+    }
+    .side-nav {
+        @extend .green-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/sidenavs/green.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $green-skin-color, 5%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $green-skin-color, 5%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: darken( $green-skin-color, 3%);
+                }
+                &:hover {
+                    background-color: darken( $green-skin-color, 3%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: darken( $green-skin-color, 0%);
+    }
+    .btn-primary {
+        background: $green-skin-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $green-skin-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $green-skin-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #294F6F;
+        &:hover,
+        &:focus {
+            background-color: lighten( #294F6F, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #294F6F, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #226568;
+        &:hover,
+        &:focus {
+            background-color: lighten( #226568, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #226568, 20%)!important;
+        }
+    }
+    .btn-outline-primary {
+        border: 2px solid $green-skin-color!important;
+        color: $green-skin-color!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid $green-skin-color!important;
+            color: $green-skin-color!important;
+        }
+    }
+    .btn-outline-secondary {
+        border: 2px solid #294F6F!important;
+        color: #294F6F!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid #294F6F!important;
+            color: #294F6F!important;
+        }
+    }
+    .btn-outline-default {
+        border: 2px solid #226568!important;
+        color: #226568!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid #226568!important;
+            color: #226568!important;
+        }
+    }
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]),
+    input[type="text"]:focus:not([readonly]),
+    input[type="password"]:focus:not([readonly]),
+    textarea.md-textarea:focus:not([readonly]) {
+        border-color: $green-skin-color;
+        box-shadow: 0 1px 0 0 $green-skin-color;
+        &+label {
+            color: $green-skin-color;
+        }
+    }
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $green-skin-color;
+                border-bottom: 2px solid $green-skin-color;
+            }
+        }
+    }
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+            &:after {
+                background-color: $green-skin-color;
+                border-color: $green-skin-color;
+            }
+        }
+    }
+    .md-form {
+        .prefix {
+            &.active {
+                color: $green-skin-color;
+            }
+        }
+    }
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $green-skin-color;
+            }
+        }
+    }
+    .top-nav-collapse {
+        background-color: darken( $green-skin-color, 0%);
+    }
+    .carousel-multi-item {
+        .controls-top>a,
+        .carousel-indicators li,
+        .carousel-indicators li.active {
+            background-color: darken( $green-skin-color, 0%);
+        }
+    }
+    .tag,
+    .form-header,
+    .card-header {
+        background-color: darken( $green-skin-color, 0%);
+    }
+}
+
+// Purple skin
+.purple-skin {
+    .primary-color {
+        background-color: #650696!important;
+    }
+    .navbar {
+        background-color: darken( $purple-skin-color, 5%);
+    }
+    .page-footer {
+        background-color: darken( $purple-skin-color, 15%);
+    }
+    .side-nav {
+        @extend .purple-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/sidenavs/purple.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $purple-skin-color, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $purple-skin-color, 10%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: darken( $purple-skin-color, 5%);
+                }
+                &:hover {
+                    background-color: darken( $purple-skin-color, 5%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: darken( $purple-skin-color, 5%);
+    }
+    .btn-primary {
+        background: $purple-skin-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $purple-skin-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $purple-skin-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #A6007D;
+        &:hover,
+        &:focus {
+            background-color: lighten( #A6007D, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #A6007D, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #21109C;
+        &:hover,
+        &:focus {
+            background-color: lighten( #21109C, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #21109C, 20%)!important;
+        }
+    }
+    .btn-outline-primary {
+        border: 2px solid $purple-skin-color!important;
+        color: $purple-skin-color!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid $purple-skin-color!important;
+            color: $purple-skin-color!important;
+        }
+    }
+    .btn-outline-secondary {
+        border: 2px solid #A6007D!important;
+        color: #A6007D!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid #A6007D!important;
+            color: #A6007D!important;
+        }
+    }
+    .btn-outline-default {
+        border: 2px solid #21109C!important;
+        color: #21109C!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid #21109C!important;
+            color: #21109C!important;
+        }
+    }
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]),
+    input[type="text"]:focus:not([readonly]),
+    input[type="password"]:focus:not([readonly]),
+    textarea.md-textarea:focus:not([readonly]) {
+        border-color: $purple-skin-color;
+        box-shadow: 0 1px 0 0 $purple-skin-color;
+        &+label {
+            color: $purple-skin-color;
+        }
+    }
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $purple-skin-color;
+                border-bottom: 2px solid $purple-skin-color;
+            }
+        }
+    }
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+            &:after {
+                background-color: $purple-skin-color;
+                border-color: $purple-skin-color;
+            }
+        }
+    }
+    .md-form {
+        .prefix {
+            &.active {
+                color: $purple-skin-color;
+            }
+        }
+    }
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $purple-skin-color;
+            }
+        }
+    }
+    .top-nav-collapse {
+        background-color: darken( $purple-skin-color, 5%);
+    }
+    .carousel-multi-item {
+        .controls-top>a,
+        .carousel-indicators li,
+        .carousel-indicators li.active {
+            background-color: darken( $purple-skin-color, 5%);
+        }
+    }
+    .tag,
+    .form-header,
+    .card-header {
+        background-color: darken( $purple-skin-color, 5%);
+    }
+}
+
+// Dark skin
+.dark-skin {
+    .primary-color {
+        background-color: $elegant-color!important;
+    }
+    .navbar {
+        background-color: lighten( $elegant-color, 5%);
+    }
+    .page-footer {
+        background-color: darken( $elegant-color, 5%);
+    }
+    .side-nav {
+        @extend .dark-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/sidenavs/dark.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $elegant-color, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: lighten( $elegant-color, 0%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: lighten( $elegant-color, 0%);
+                }
+                &:hover {
+                    background-color: lighten( $elegant-color, 0%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: lighten( $elegant-color, 5%);
+    }
+    .btn-primary {
+        background: $elegant-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $elegant-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $elegant-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #3F729B;
+        &:hover,
+        &:focus {
+            background-color: lighten( #3F729B, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #3F729B, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #676767;
+        &:hover,
+        &:focus {
+            background-color: lighten( #676767, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #676767, 20%)!important;
+        }
+    }
+    .btn-outline-primary {
+        border: 2px solid $elegant-color!important;
+        color: $elegant-color!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid $elegant-color!important;
+            color: $elegant-color!important;
+        }
+    }
+    .btn-outline-secondary {
+        border: 2px solid #3F729B!important;
+        color: #3F729B!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid #3F729B!important;
+            color: #3F729B!important;
+        }
+    }
+    .btn-outline-default {
+        border: 2px solid #676767!important;
+        color: #676767!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid #676767!important;
+            color: #676767!important;
+        }
+    }
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]),
+    input[type="text"]:focus:not([readonly]),
+    input[type="password"]:focus:not([readonly]),
+    textarea.md-textarea:focus:not([readonly]) {
+        border-color: $elegant-color;
+        box-shadow: 0 1px 0 0 $elegant-color;
+        &+label {
+            color: $elegant-color;
+        }
+    }
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $elegant-color;
+                border-bottom: 2px solid $elegant-color;
+            }
+        }
+    }
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+            &:after {
+                background-color: $elegant-color;
+                border-color: $elegant-color;
+            }
+        }
+    }
+    .md-form {
+        .prefix {
+            &.active {
+                color: $elegant-color;
+            }
+        }
+    }
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $elegant-color;
+            }
+        }
+    }
+    .top-nav-collapse {
+        background-color: lighten( $elegant-color, 5%);
+    }
+    .carousel-multi-item {
+        .controls-top>a,
+        .carousel-indicators li,
+        .carousel-indicators li.active {
+            background-color: lighten( $elegant-color, 5%);
+        }
+    }
+    .tag,
+    .form-header,
+    .card-header {
+        background-color: lighten( $elegant-color, 5%);
+    }
+}
+
+// Grey skin
+.grey-skin {
+    .primary-color {
+        background-color: $stylish-color!important;
+    }
+    .navbar {
+        background-color: lighten( $stylish-color, 5%);
+    }
+    .page-footer {
+        background-color: darken( $stylish-color, 5%);
+    }
+    .side-nav {
+        @extend .grey-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/sidenavs/grey.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $stylish-color, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $stylish-color, 5%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: darken( $stylish-color, 5%);
+                }
+                &:hover {
+                    background-color: darken( $stylish-color, 5%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: lighten( $stylish-color, 5%);
+    }
+    .btn-primary {
+        background: $stylish-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $stylish-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $stylish-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #3F729B;
+        &:hover,
+        &:focus {
+            background-color: lighten( #3F729B, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #3F729B, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #17202F;
+        &:hover,
+        &:focus {
+            background-color: lighten( #17202F, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #17202F, 20%)!important;
+        }
+    }
+    .btn-outline-primary {
+        border: 2px solid lighten( $stylish-color, 15%)!important;
+        color: $stylish-color!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid lighten( $stylish-color, 15%)!important;
+            color: $stylish-color!important;
+        }
+    }
+    .btn-outline-secondary {
+        border: 2px solid #3F729B!important;
+        color: #3F729B!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid #3F729B!important;
+            color: #3F729B!important;
+        }
+    }
+    .btn-outline-default {
+        border: 2px solid #17202F!important;
+        color: #17202F!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid #17202F!important;
+            color: #17202F!important;
+        }
+    }
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]),
+    input[type="text"]:focus:not([readonly]),
+    input[type="password"]:focus:not([readonly]),
+    textarea.md-textarea:focus:not([readonly]) {
+        border-color: $stylish-color;
+        box-shadow: 0 1px 0 0 $stylish-color;
+        &+label {
+            color: $stylish-color;
+        }
+    }
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $stylish-color;
+                border-bottom: 2px solid $stylish-color;
+            }
+        }
+    }
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+            &:after {
+                background-color: $stylish-color;
+                border-color: $stylish-color;
+            }
+        }
+    }
+    .md-form {
+        .prefix {
+            &.active {
+                color: $stylish-color;
+            }
+        }
+    }
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $stylish-color;
+            }
+        }
+    }
+    .top-nav-collapse {
+        background-color: lighten( $stylish-color, 5%);
+    }
+    .carousel-multi-item {
+        .controls-top>a,
+        .carousel-indicators li,
+        .carousel-indicators li.active {
+            background-color: lighten( $stylish-color, 5%);
+        }
+    }
+    .tag,
+    .form-header,
+    .card-header {
+        background-color: lighten( $stylish-color, 5%);
+    }
+}
+
+// MDB skin
+.mdb-skin {
+    .primary-color {
+        background-color: $unique-color!important;
+    }
+    .navbar {
+        background-color: lighten( $unique-color, 0%);
+    }
+    .page-footer {
+        background-color: darken( $unique-color, 15%);
+    }
+    .side-nav {
+        @extend .mdb-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/sidenavs/mdb.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $unique-color, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $unique-color, 15%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: darken( $unique-color, 15%);
+                }
+                &:hover {
+                    background-color: darken( $unique-color, 15%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: lighten( $unique-color, 0%);
+    }
+    .btn-primary {
+        background: $unique-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $unique-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $unique-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: $unique-color-dark;
+        &:hover,
+        &:focus {
+            background-color: lighten( $unique-color-dark, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $unique-color-dark, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #154771;
+        &:hover,
+        &:focus {
+            background-color: lighten( #154771, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #154771, 20%)!important;
+        }
+    }
+    .btn-outline-primary {
+        border: 2px solid $unique-color!important;
+        color: $unique-color!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid $unique-color!important;
+            color: $unique-color!important;
+        }
+    }
+    .btn-outline-secondary {
+        border: 2px solid $unique-color-dark!important;
+        color: $unique-color-dark!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid $unique-color-dark!important;
+            color: $unique-color-dark!important;
+        }
+    }
+    .btn-outline-default {
+        border: 2px solid #154771!important;
+        color: #154771!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid #154771!important;
+            color: #154771!important;
+        }
+    }
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]),
+    input[type="text"]:focus:not([readonly]),
+    input[type="password"]:focus:not([readonly]),
+    textarea.md-textarea:focus:not([readonly]) {
+        border-color: $unique-color;
+        box-shadow: 0 1px 0 0 $unique-color;
+        &+label {
+            color: $unique-color;
+        }
+    }
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $unique-color;
+                border-bottom: 2px solid $unique-color;
+            }
+        }
+    }
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+            &:after {
+                background-color: $unique-color;
+                border-color: $unique-color;
+            }
+        }
+    }
+    .md-form {
+        .prefix {
+            &.active {
+                color: $unique-color;
+            }
+        }
+    }
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $unique-color;
+            }
+        }
+    }
+    .top-nav-collapse {
+        background-color: lighten( $unique-color, 0%);
+    }
+    .carousel-multi-item {
+        .controls-top>a,
+        .carousel-indicators li,
+        .carousel-indicators li.active {
+            background-color: lighten( $unique-color, 0%);
+        }
+    }
+    .tag,
+    .form-header,
+    .card-header {
+        background-color: lighten( $unique-color, 0%);
+    }
+}
+
+//Deep Orange skin
+.deep-orange-skin {
+    .primary-color {
+        background-color: $deep-orange-skin-color!important;
+    }
+    .navbar {
+        background-color: lighten( $deep-orange-skin-color, 0%);
+        .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+            background-color: lighten($deep-orange-skin-color, 0%);
+        }
+    }
+    .page-footer {
+        background-color: darken( $deep-orange-skin-color, 15%);
+    }
+    .side-nav {
+        @extend .deep-orange-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/sidenavs/deep-orange.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $deep-orange-skin-color, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken($deep-orange-skin-color, 5%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: darken( $deep-orange-skin-color, 5%);
+                }
+                &:hover {
+                    background-color: darken( $deep-orange-skin-color, 5%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .btn-primary {
+        background: $deep-orange-skin-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $deep-orange-skin-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $deep-orange-skin-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #DD6000;
+        &:hover,
+        &:focus {
+            background-color: lighten( #DD6000, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #DD6000, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #830012;
+        &:hover,
+        &:focus {
+            background-color: lighten( #830012, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #830012, 20%)!important;
+        }
+    }
+    .btn-outline-primary {
+        border: 2px solid $deep-orange-skin-color!important;
+        color: $deep-orange-skin-color!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid $deep-orange-skin-color!important;
+            color: $deep-orange-skin-color!important;
+        }
+    }
+    .btn-outline-secondary {
+        border: 2px solid #DD6000!important;
+        color: #DD6000!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid #DD6000!important;
+            color: #DD6000!important;
+        }
+    }
+    .btn-outline-default {
+        border: 2px solid #830012!important;
+        color: #830012!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid #830012!important;
+            color: #830012!important;
+        }
+    }
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]),
+    input[type="text"]:focus:not([readonly]),
+    input[type="password"]:focus:not([readonly]),
+    textarea.md-textarea:focus:not([readonly]) {
+        border-color: $deep-orange-skin-color;
+        box-shadow: 0 1px 0 0 $deep-orange-skin-color;
+        &+label {
+            color: $deep-orange-skin-color;
+        }
+    }
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $deep-orange-skin-color;
+                border-bottom: 2px solid $deep-orange-skin-color;
+            }
+        }
+    }
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+            &:after {
+                background-color: $deep-orange-skin-color;
+                border-color: $deep-orange-skin-color;
+            }
+        }
+    }
+    .md-form {
+        .prefix {
+            &.active {
+                color: $deep-orange-skin-color;
+            }
+        }
+    }
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $deep-orange-skin-color;
+            }
+        }
+    }
+    .top-nav-collapse {
+        background-color: lighten( $deep-orange-skin-color, 0%);
+    }
+    .carousel-multi-item {
+        .controls-top>a,
+        .carousel-indicators li,
+        .carousel-indicators li.active {
+            background-color: lighten( $deep-orange-skin-color, 0%);
+        }
+    }
+    .tag,
+    .form-header,
+    .card-header {
+        background-color: lighten( $deep-orange-skin-color, 0%);
+    }
+}
+
+// Graphite skin
+.graphite-skin {
+    .primary-color {
+        background-color: $special-color!important;
+    }
+    .navbar {
+        background-color: lighten( $special-color, 0%);
+        .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+            background-color: lighten( $special-color, 0%);
+        }
+    }
+    .page-footer {
+        background-color: darken( $special-color, 5%);
+    }
+    .side-nav {
+        @extend .graphite-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/sidenavs/graphite.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $special-color, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $special-color, 5%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: darken( $special-color, 5%);
+                }
+                &:hover {
+                    background-color: darken( $special-color, 5%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .btn-primary {
+        background: $special-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $special-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $special-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #453D55;
+        &:hover,
+        &:focus {
+            background-color: lighten( #453D55, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #453D55, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #154771;
+        &:hover,
+        &:focus {
+            background-color: lighten( #154771, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #154771, 20%)!important;
+        }
+    }
+    .btn-outline-primary {
+        border: 2px solid $special-color!important;
+        color: $special-color!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid $special-color!important;
+            color: $special-color!important;
+        }
+    }
+    .btn-outline-secondary {
+        border: 2px solid #453D55!important;
+        color: #453D55!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid #453D55!important;
+            color: #453D55!important;
+        }
+    }
+    .btn-outline-default {
+        border: 2px solid #154771!important;
+        color: #154771!important;
+        &:hover,
+        &:focus,
+        &.active {
+            border: 2px solid #154771!important;
+            color: #154771!important;
+        }
+    }
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]),
+    input[type="text"]:focus:not([readonly]),
+    input[type="password"]:focus:not([readonly]),
+    textarea.md-textarea:focus:not([readonly]) {
+        border-color: $special-color;
+        box-shadow: 0 1px 0 0 $special-color;
+        &+label {
+            color: $special-color;
+        }
+    }
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $special-color;
+                border-bottom: 2px solid $special-color;
+            }
+        }
+    }
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+            &:after {
+                background-color: $special-color;
+                border-color: $special-color;
+            }
+        }
+    }
+    .md-form {
+        .prefix {
+            &.active {
+                color: $special-color;
+            }
+        }
+    }
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $special-color;
+            }
+        }
+    }
+    .top-nav-collapse {
+        background-color: lighten( $special-color, 0%);
+    }
+    .carousel-multi-item {
+        .controls-top>a,
+        .carousel-indicators li,
+        .carousel-indicators li.active {
+            background-color: lighten( $special-color, 0%);
+        }
+    }
+    .tag,
+    .form-header,
+    .card-header {
+        background-color: lighten( $special-color, 2%);
+    }
+}
+
+// Pink skin
+.pink-skin {
+    .primary-color {
+        background-color: #880e4f!important;
+    }
+    .navbar {
+        background-color: darken( $pink-skin-color, 5%);
+    }
+    .page-footer {
+        background-color: darken( $pink-skin-color, 15%);
+    }
+    .side-nav {
+        @extend .pink-gradient;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/regular/nature/img%20(73).jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $pink-skin-color, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $pink-skin-color, 10%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: darken( $pink-skin-color, 5%);
+                }
+                &:hover {
+                    background-color: darken( $pink-skin-color, 5%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: darken( $pink-skin-color, 5%);
+    }
+    .btn-primary {
+        background: $pink-skin-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $pink-skin-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $pink-skin-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #303f9f;
+        &:hover,
+        &:focus {
+            background-color: lighten( #303f9f, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #303f9f, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #21109C;
+        &:hover,
+        &:focus {
+            background-color: lighten( #21109C, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #21109C, 20%)!important;
+        }
+    }
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]),
+    input[type="text"]:focus:not([readonly]),
+    input[type="password"]:focus:not([readonly]),
+    textarea.md-textarea:focus:not([readonly]) {
+        border-color: $pink-skin-color;
+        box-shadow: 0 1px 0 0 $pink-skin-color;
+        &+label {
+            color: $pink-skin-color;
+        }
+    }
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $pink-skin-color;
+                border-bottom: 2px solid $pink-skin-color;
+            }
+        }
+    }
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+            &:after {
+                background-color: $pink-skin-color;
+                border-color: $pink-skin-color;
+            }
+        }
+    }
+    .md-form {
+        .prefix {
+            &.active {
+                color: $pink-skin-color;
+            }
+        }
+    }
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $pink-skin-color;
+            }
+        }
+    }
+    .top-nav-collapse {
+        background-color: $pink-skin-color;
+    }
+    // Carousel
+    .carousel-multi-item {
+        .controls-top>a,
+        .carousel-indicators li,
+        .carousel-indicators li.active {
+            background-color: $pink-skin-color;
+        }
+    }
+    // Tags, form-header, card-header
+    .tag,
+    .form-header,
+    .card-header {
+        background-color: lighten( $pink-skin-color, 2%);
+    }
+}
+
+// Light grey skin
+.light-grey-skin {
+    .primary-color {
+        background-color: #353535!important;
+    }
+    .navbar {
+        background-color: darken( $light-grey-skin-color, 5%);
+    }
+    .page-footer {
+        background-color: darken( $light-grey-skin-color, 15%);
+    }
+    .side-nav {
+        background-color: darken( $light-grey-skin-color, 5%);
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/regular/nature/img%20(32).jpg") no-repeat center center;
+            @include background-size(cover);
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $light-grey-skin-color, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $light-grey-skin-color, 10%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                &.active {
+                    background-color: darken( $light-grey-skin-color, 15%);
+                }
+                &:hover {
+                    background-color: darken( $light-grey-skin-color, 20%);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: rgba(227, 242, 253, 0.64);
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: darken( $light-grey-skin-color, 5%);
+    }
+    .btn-primary {
+        background: #353535;
+        &:hover,
+        &:focus {
+            background-color: lighten( #353535, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #353535, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #3F729B;
+        &:hover,
+        &:focus {
+            background-color: lighten( #3F729B, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #3F729B, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #0F0F0F;
+        &:hover,
+        &:focus {
+            background-color: lighten( #0F0F0F, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #0F0F0F, 20%)!important;
+        }
+    }
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]),
+    input[type="text"]:focus:not([readonly]),
+    input[type="password"]:focus:not([readonly]),
+    textarea.md-textarea:focus:not([readonly]) {
+        border-color: $light-grey-skin-color;
+        box-shadow: 0 1px 0 0 $light-grey-skin-color;
+        &+label {
+            color: $light-grey-skin-color;
+        }
+    }
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $light-grey-skin-color;
+                border-bottom: 2px solid $light-grey-skin-color;
+            }
+        }
+    }
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+            &:after {
+                background-color: $light-grey-skin-color;
+                border-color: $light-grey-skin-color;
+            }
+        }
+    }
+    .md-form {
+        .prefix {
+            &.active {
+                color: $light-grey-skin-color;
+            }
+        }
+    }
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $light-grey-skin-color;
+            }
+        }
+    }
+    .top-nav-collapse {
+        background-color: $light-grey-skin-color;
+    }
+    .carousel-multi-item {
+        .controls-top>a,
+        .carousel-indicators li,
+        .carousel-indicators li.active {
+            background-color: $light-grey-skin-color;
+        }
+    }
+    // Tags, form-header, card-header
+    .tag,
+    .form-header,
+    .card-header {
+        background-color: lighten( $light-grey-skin-color, 2%);
+    }
+}
+
+
+$white-skin-color: #4285F4;
+$white-skin-text-color: #212121;
+
+// Light skin
+.white-skin {
+
+    .primary-color {
+        background-color: $white-skin-color!important;
+    }
+    .navbar {
+        color: $white-skin-text-color;
+        background-color: #fff;
+    }
+    .page-footer {
+        background-color: darken( #fff, 15%);
+    }
+    .double-nav a {
+        color: $white-skin-text-color;
+    }
+    .side-nav {
+        background-color: darken( #fff, 5%);
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/img/Photos/Others/whiteskin-bg.jpg") no-repeat center center;
+            @include background-size(cover);
+        }
+        .user-box {
+            color:$white-skin-text-color;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $white-skin-color, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $white-skin-text-color, 10%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                color: $white-skin-text-color;
+                font-weight:400;
+                &.active {
+                    color: $white-skin-color;
+                    font-weight:500;
+                    .fa {
+                        color: $white-skin-color;
+                        @include transition (color 0.3s linear);
+                    }
+                }
+                &:hover {
+                    background-color: rgba(0,0,0,.05);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: $white-skin-text-color;
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: darken( $white-skin-color, 5%);
+    }
+    .btn-primary {
+        background: $white-skin-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $white-skin-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $white-skin-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #D25048;
+        &:hover,
+        &:focus {
+            background-color: lighten( #D25048, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #D25048, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #0F0F0F;
+        &:hover,
+        &:focus {
+            background-color: lighten( #0F0F0F, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #0F0F0F, 20%)!important;
+        }
+    }
+
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]), input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), textarea.md-textarea:focus:not([readonly]) {
+        border-color:$white-skin-color;
+        box-shadow:0 1px 0 0 $white-skin-color;
+        &+label {
+            color:$white-skin-color;
+        }
+    }
+
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $white-skin-color;
+                border-bottom: 2px solid $white-skin-color;
+            }
+        }
+    }
+
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+
+            &:after {
+                background-color: $white-skin-color;
+                border-color: $white-skin-color;
+            }
+        }
+    }
+
+    .md-form {
+        .prefix {
+            &.active {
+                color: $white-skin-color;
+            }
+        }
+    }
+
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $white-skin-color;
+            }
+        }
+    }
+
+    .top-nav-collapse {
+        background-color: #fff;
+    }
+
+    .carousel-multi-item {
+        .controls-top > a, .carousel-indicators li, .carousel-indicators li.active {
+            background-color: $white-skin-color;
+        }
+    }
+
+    // Tags, form-header, card-header
+    .tag, .form-header, .card-header {
+        background-color: lighten( $white-skin-color, 2%);
+    }
+}
+
+// Elegant White Skin
+.skin-8 {
+    .gradient {
+        background: #ababab; /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  #ababab 0%, #ffffff 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg,  #ababab 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg,  #ababab 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ababab', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
+    }
+    .primary-color {
+        background-color: $white-skin-color!important;
+    }
+    .navbar {
+        color: $white-skin-text-color;
+        background-color: #fff;
+    }
+    .page-footer {
+        background-color: darken( #fff, 15%);
+    }
+    .double-nav a {
+        color: $white-skin-text-color;
+    }
+    .side-nav {
+        background-color: $white-skin-color;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center;
+        .logo-wrapper {
+            &> div {
+                background-color:transparent!important;
+            }
+        }
+        .user-box {
+            color:$white-skin-text-color;
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $white-skin-color, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $white-skin-text-color, 10%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                color: $white-skin-text-color;
+                font-weight:400;
+                &.active {
+                    color: $white-skin-color;
+                    font-weight:500;
+                    .fa {
+                        color: $white-skin-color;
+                        @include transition (color 0.3s linear);
+                    }
+                }
+                &:hover {
+                    background-color: rgba(0,0,0,.05);
+                    @include transition (all 0.3s linear);
+                }
+            }
+        }
+        .fa {
+            color: $white-skin-text-color;
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: darken( $white-skin-color, 5%);
+    }
+    .btn-primary {
+        background: $white-skin-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $white-skin-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $white-skin-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #D25048;
+        &:hover,
+        &:focus {
+            background-color: lighten( #D25048, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #D25048, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #0F0F0F;
+        &:hover,
+        &:focus {
+            background-color: lighten( #0F0F0F, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #0F0F0F, 20%)!important;
+        }
+    }
+
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]), input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), textarea.md-textarea:focus:not([readonly]) {
+        border-color:$white-skin-color;
+        box-shadow:0 1px 0 0 $white-skin-color;
+        &+label {
+            color:$white-skin-color;
+        }
+    }
+
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $white-skin-color;
+                border-bottom: 2px solid $white-skin-color;
+            }
+        }
+    }
+
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+
+            &:after {
+                background-color: $white-skin-color;
+                border-color: $white-skin-color;
+            }
+        }
+    }
+
+    .md-form {
+        .prefix {
+            &.active {
+                color: $white-skin-color;
+            }
+        }
+    }
+
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $white-skin-color;
+            }
+        }
+    }
+
+    .top-nav-collapse {
+        background-color: #fff;
+    }
+
+    .carousel-multi-item {
+        .controls-top > a, .carousel-indicators li, .carousel-indicators li.active {
+            background-color: $white-skin-color;
+        }
+    }
+
+    // Tags, form-header, card-header
+    .tag, .form-header, .card-header {
+        background-color: lighten( $white-skin-color, 2%);
+    }
+
+    .sidenav-bg {
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:-1;
+        background-attachment:fixed;
+        &:after {
+            width: 100%;
+            display: block;
+            content: "";
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            bottom:0;
+            background: rgba(255,255,255,.8);
+            margin-bottom: -99999px;
+            padding-bottom: 99999px;
+        }
+    }
+}
+
+// Elegant dark skin
+
+$elegant-dark-skin-color: #222;
+$elegant-dark-primary-color: #2AD1A3;
+$elegant-dark-skin-text: #fff;
+
+.skin-9 {
+    .gradient {
+        background: #000000; /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  #000000 0%, #616161 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg,  #000000 0%,#616161 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg,  #000000 0%,#616161 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#616161',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
+    }
+    .primary-color {
+        background-color: $elegant-dark-primary-color!important;
+    }
+    .navbar {
+        background-color: $elegant-dark-skin-color;
+    }
+    .page-footer {
+        background-color: #222;
+    }
+    .side-nav {
+        background-color: $elegant-dark-skin-color;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center; // Temporary
+        .logo-wrapper {
+            &> div {
+                background-color:transparent!important;
+            }
+        }
+        .user-box {
+            padding: 20px 10px 0 10px;
+            img {
+                margin:0 auto 10px auto;
+                max-width:80px;
+            }
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $elegant-dark-primary-color, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $elegant-dark-skin-text, 10%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                color: $elegant-dark-skin-text;
+                font-weight:400;
+                @include transition (all 0.3s linear);
+                &:hover {
+                    background-color: rgba(255,255,255,.1);
+                }
+                &.active {
+                    background-color: $elegant-dark-primary-color;
+                }
+            }
+        }
+        .fa {
+            color: $elegant-dark-skin-text;
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: darken( $elegant-dark-primary-color, 5%);
+    }
+    .btn-primary {
+        background: $elegant-dark-primary-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $elegant-dark-primary-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $elegant-dark-primary-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #00684B;
+        &:hover,
+        &:focus {
+            background-color: lighten( #00684B, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #00684B, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #0F0F0F;
+        &:hover,
+        &:focus {
+            background-color: lighten( #0F0F0F, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #0F0F0F, 20%)!important;
+        }
+    }
+
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]), input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), textarea.md-textarea:focus:not([readonly]) {
+        border-color:$elegant-dark-primary-color;
+        box-shadow:0 1px 0 0 $elegant-dark-primary-color;
+        &+label {
+            color:$elegant-dark-primary-color;
+        }
+    }
+
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $elegant-dark-primary-color;
+                border-bottom: 2px solid $elegant-dark-primary-color;
+            }
+        }
+    }
+
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+
+            &:after {
+                background-color: $elegant-dark-primary-color;
+                border-color: $elegant-dark-primary-color;
+            }
+        }
+    }
+
+    .md-form {
+        .prefix {
+            &.active {
+                color: $elegant-dark-primary-color;
+            }
+        }
+    }
+
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $elegant-dark-primary-color;
+            }
+        }
+    }
+
+    .top-nav-collapse {
+        background-color: $elegant-dark-skin-color;
+    }
+
+    .carousel-multi-item {
+        .controls-top > a, .carousel-indicators li, .carousel-indicators li.active {
+            background-color: $elegant-dark-primary-color;
+        }
+    }
+
+    // Tags, form-header, card-header
+    .tag, .form-header, .card-header {
+        background-color: lighten( $elegant-dark-primary-color, 2%);
+    }
+
+    .sidenav-bg {
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:-1;
+        background-attachment:fixed;
+        &:after {
+            width: 100%;
+            display: block;
+            content: "";
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            bottom:0;
+            background: rgba(0,0,0,.8);
+            margin-bottom: -99999px;
+            padding-bottom: 99999px;
+        }
+    }
+}
+
+
+
+// New skins
+
+// BG Variants
+.sn-bg-1 {
+    background-image:url(http://mdbootstrap.com/img/Photos/Others/sidenav1.jpg);
+}
+
+.sn-bg-2 {
+    background-image:url(http://mdbootstrap.com/img/Photos/Others/sidenav2.jpg);
+}
+
+.sn-bg-3 {
+    background-image:url(http://mdbootstrap.com/img/Photos/Others/sidenav3.jpg);
+}
+
+.sn-bg-4 {
+    background-image:url(http://mdbootstrap.com/img/Photos/Others/sidenav4.jpg);
+}
+
+// Skin 1
+
+$skin-1-btn: #d0637c;
+$skin-1-flat: #383048;
+$skin-1-mask: rgba(22, 5, 34, 0.8);
+$skin-1-navbar: #4b415a;
+
+.skin-1 {
+    .gradient {
+        background: #282233; /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  #282233 0%, #776598 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg,  #282233 0%,#776598 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg,  #282233 0%,#776598 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282233', endColorstr='#776598',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
+    }
+    .primary-color {
+        background-color: $skin-1-btn !important;
+    }
+    .navbar {
+        background-color: $skin-1-navbar;
+    }
+    .page-footer {
+        background-color: $skin-1-navbar;
+    }
+    .side-nav {
+        background-color: $skin-1-flat;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center; // Temporary
+        .logo-wrapper {
+            &> div {
+                background-color:transparent!important;
+            }
+        }
+        .user-box {
+            padding: 20px 10px 0 10px;
+            img {
+                margin:0 auto 10px auto;
+                max-width:80px;
+            }
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $skin-1-btn, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $elegant-dark-skin-text, 10%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                color: $elegant-dark-skin-text;
+                @include transition (all 0.3s linear);
+                &:hover {
+                    background-color: $skin-1-btn;
+                }
+                &.active {
+                    background-color: $skin-1-btn;
+                }
+            }
+        }
+        .fa {
+            color: $elegant-dark-skin-text;
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: darken( $skin-1-btn, 5%);
+    }
+    .btn-primary {
+        background: $skin-1-btn;
+        &:hover,
+        &:focus {
+            background-color: lighten( $skin-1-btn, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $skin-1-btn, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #00684B;
+        &:hover,
+        &:focus {
+            background-color: lighten( #00684B, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #00684B, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #0F0F0F;
+        &:hover,
+        &:focus {
+            background-color: lighten( #0F0F0F, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #0F0F0F, 20%)!important;
+        }
+    }
+
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]), input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), textarea.md-textarea:focus:not([readonly]) {
+        border-color:$skin-1-btn;
+        box-shadow:0 1px 0 0 $skin-1-btn;
+        &+label {
+            color:$skin-1-btn;
+        }
+    }
+
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $skin-1-btn;
+                border-bottom: 2px solid $skin-1-btn;
+            }
+        }
+    }
+
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+
+            &:after {
+                background-color: $skin-1-btn;
+                border-color: $skin-1-btn;
+            }
+        }
+    }
+
+    .md-form {
+        .prefix {
+            &.active {
+                color: $skin-1-btn;
+            }
+        }
+    }
+
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $skin-1-btn;
+            }
+        }
+    }
+
+    .top-nav-collapse {
+        background-color: $skin-1-flat;
+    }
+
+    .carousel-multi-item {
+        .controls-top > a, .carousel-indicators li, .carousel-indicators li.active {
+            background-color: $skin-1-btn;
+        }
+    }
+
+    // Tags, form-header, card-header
+    .tag, .form-header, .card-header {
+        background-color: lighten( $skin-1-btn, 2%);
+    }
+
+    .sidenav-bg {
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:-1;
+        background-attachment:fixed;
+        &:after {
+            width: 100%;
+            display: block;
+            content: "";
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            bottom:0;
+            background: $skin-1-mask;
+            margin-bottom: -99999px;
+            padding-bottom: 99999px;
+        }
+    }
+}
+
+// Skin 2
+$skin-2-btn: #309e9e;
+$skin-2-flat: #383048;
+$skin-2-mask: rgba(14, 15, 32, 0.8);
+$skin-2-navbar: #353b50;
+
+.skin-2 {
+    .gradient {
+        background: #222735; /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  #222735 0%, #63739c 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg,  #222735 0%,#63739c 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg,  #222735 0%,#63739c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222735', endColorstr='#63739c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
+    }
+    .primary-color {
+        background-color: $skin-2-btn !important;
+    }
+    .navbar {
+        background-color: $skin-2-navbar;
+    }
+    .page-footer {
+        background-color: #353b50;
+    }
+    .side-nav {
+        background-color: $skin-2-flat;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center; // Temporary
+        .logo-wrapper {
+            &> div {
+                background-color:transparent!important;
+            }
+        }
+        .user-box {
+            padding: 20px 10px 0 10px;
+            img {
+                margin:0 auto 10px auto;
+                max-width:80px;
+            }
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $skin-2-btn, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $elegant-dark-skin-text, 10%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                color: $elegant-dark-skin-text;
+                @include transition (all 0.3s linear);
+                &:hover {
+                    background-color: $skin-2-btn;
+                }
+                &.active {
+                    background-color: $skin-2-btn;
+                }
+            }
+        }
+        .fa {
+            color: $elegant-dark-skin-text;
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: darken( $skin-2-btn, 5%);
+    }
+    .btn-primary {
+        background: $skin-2-btn;
+        &:hover,
+        &:focus {
+            background-color: lighten( $skin-2-btn, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $skin-2-btn, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #00684B;
+        &:hover,
+        &:focus {
+            background-color: lighten( #00684B, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #00684B, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #0F0F0F;
+        &:hover,
+        &:focus {
+            background-color: lighten( #0F0F0F, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #0F0F0F, 20%)!important;
+        }
+    }
+
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]), input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), textarea.md-textarea:focus:not([readonly]) {
+        border-color:$skin-2-btn;
+        box-shadow:0 1px 0 0 $skin-2-btn;
+        &+label {
+            color:$skin-2-btn;
+        }
+    }
+
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $skin-2-btn;
+                border-bottom: 2px solid $skin-2-btn;
+            }
+        }
+    }
+
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+
+            &:after {
+                background-color: $skin-2-btn;
+                border-color: $skin-2-btn;
+            }
+        }
+    }
+
+    .md-form {
+        .prefix {
+            &.active {
+                color: $skin-2-btn;
+            }
+        }
+    }
+
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $skin-2-btn;
+            }
+        }
+    }
+
+    .top-nav-collapse {
+        background-color: $skin-2-flat;
+    }
+
+    .carousel-multi-item {
+        .controls-top > a, .carousel-indicators li, .carousel-indicators li.active {
+            background-color: $skin-2-btn;
+        }
+    }
+
+    // Tags, form-header, card-header
+    .tag, .form-header, .card-header {
+        background-color: lighten( $skin-2-btn, 2%);
+    }   
+
+    .sidenav-bg {
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:-1;
+        background-attachment:fixed;
+        &:after {
+            width: 100%;
+            display: block;
+            content: "";
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            bottom:0;
+            background: $skin-2-mask;
+            margin-bottom: -99999px;
+            padding-bottom: 99999px;
+        }
+    }
+}
+
+// Skin 3
+$skin-3-btn: #30a29d;
+$skin-3-flat: #1e5252;
+$skin-3-mask: rgba(7, 45, 42, 0.8);
+$skin-3-navbar: #21403f;
+
+.skin-3 {
+    .gradient {
+        background: #153535; /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  #153535 0%, #4b9292 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg,  #153535 0%,#4b9292 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg,  #153535 0%,#4b9292 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#153535', endColorstr='#4b9292',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
+    }
+    .primary-color {
+        background-color: $skin-3-btn !important;
+    }
+    .navbar {
+        background-color: $skin-3-navbar;
+    }
+    .page-footer {
+        background-color: $skin-3-navbar;
+    }
+    .side-nav {
+        background-color: $skin-3-flat;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center; // Temporary
+        .logo-wrapper {
+            &> div {
+                background-color:transparent!important;
+            }
+        }
+        .user-box {
+            padding: 20px 10px 0 10px;
+            img {
+                margin:0 auto 10px auto;
+                max-width:80px;
+            }
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $skin-3-btn, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $elegant-dark-skin-text, 10%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                color: $elegant-dark-skin-text;
+                @include transition (all 0.3s linear);
+                &:hover {
+                    background-color: $skin-3-btn;
+                }
+                &.active {
+                    background-color: $skin-3-btn;
+                }
+            }
+        }
+        .fa {
+            color: $elegant-dark-skin-text;
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: darken( $skin-3-btn, 5%);
+    }
+    .btn-primary {
+        background: $skin-3-btn;
+        &:hover,
+        &:focus {
+            background-color: lighten( $skin-3-btn, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $skin-3-btn, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #00684B;
+        &:hover,
+        &:focus {
+            background-color: lighten( #00684B, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #00684B, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #0F0F0F;
+        &:hover,
+        &:focus {
+            background-color: lighten( #0F0F0F, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #0F0F0F, 20%)!important;
+        }
+    }
+
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]), input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), textarea.md-textarea:focus:not([readonly]) {
+        border-color:$skin-3-btn;
+        box-shadow:0 1px 0 0 $skin-3-btn;
+        &+label {
+            color:$skin-3-btn;
+        }
+    }
+
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $skin-3-btn;
+                border-bottom: 2px solid $skin-3-btn;
+            }
+        }
+    }
+
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+
+            &:after {
+                background-color: $skin-3-btn;
+                border-color: $skin-3-btn;
+            }
+        }
+    }
+
+    .md-form {
+        .prefix {
+            &.active {
+                color: $skin-3-btn;
+            }
+        }
+    }
+
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $skin-3-btn;
+            }
+        }
+    }
+
+    .top-nav-collapse {
+        background-color: $skin-3-flat;
+    }
+
+    .carousel-multi-item {
+        .controls-top > a, .carousel-indicators li, .carousel-indicators li.active {
+            background-color: $skin-3-btn;
+        }
+    }
+
+    // Tags, form-header, card-header
+    .tag, .form-header, .card-header {
+        background-color: lighten( $skin-3-btn, 2%);
+    }   
+    .sidenav-bg {
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:-1;
+        background-attachment:fixed;
+        &:after {
+            width: 100%;
+            display: block;
+            content: "";
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            bottom:0;
+            background: $skin-3-mask;
+            margin-bottom: -99999px;
+            padding-bottom: 99999px;
+        }
+    }
+}
+
+// Skin 4
+$skin-4-btn: #bd5d70;
+$skin-4-flat: #673348;
+$skin-4-mask: rgba(72, 24, 43, 0.8);
+$skin-4-navbar: #532a3c;
+
+.skin-4 {
+    .gradient {
+        background: #2d0c1a; /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  #2d0c1a 0%, #b16382 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg,  #2d0c1a 0%,#b16382 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg,  #2d0c1a 0%,#b16382 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d0c1a', endColorstr='#b16382',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
+    }
+    .primary-color {
+        background-color: $skin-4-btn !important;
+    }
+    .navbar {
+        background-color: $skin-4-navbar;
+    }
+    .page-footer {
+        background-color: darken( $skin-4-navbar, 15%);
+    }
+    .side-nav {
+        background-color: $skin-4-flat;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center; // Temporary
+        .logo-wrapper {
+            &> div {
+                background-color:transparent!important;
+            }
+        }
+        .user-box {
+            padding: 20px 10px 0 10px;
+            img {
+                margin:0 auto 10px auto;
+                max-width:80px;
+            }
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $skin-4-btn, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $elegant-dark-skin-text, 10%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                color: $elegant-dark-skin-text;
+                @include transition (all 0.3s linear);
+                &:hover {
+                    background-color: $skin-4-btn;
+                }
+                &.active {
+                    background-color: $skin-4-btn;
+                }
+            }
+        }
+        .fa {
+            color: $elegant-dark-skin-text;
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: darken( $skin-4-btn, 5%);
+    }
+    .btn-primary {
+        background: $skin-4-btn;
+        &:hover,
+        &:focus {
+            background-color: lighten( $skin-4-btn, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $skin-4-btn, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #00684B;
+        &:hover,
+        &:focus {
+            background-color: lighten( #00684B, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #00684B, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #0F0F0F;
+        &:hover,
+        &:focus {
+            background-color: lighten( #0F0F0F, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #0F0F0F, 20%)!important;
+        }
+    }
+
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]), input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), textarea.md-textarea:focus:not([readonly]) {
+        border-color:$skin-4-btn;
+        box-shadow:0 1px 0 0 $skin-4-btn;
+        &+label {
+            color:$skin-4-btn;
+        }
+    }
+
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $skin-4-btn;
+                border-bottom: 2px solid $skin-4-btn;
+            }
+        }
+    }
+
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+
+            &:after {
+                background-color: $skin-4-btn;
+                border-color: $skin-4-btn;
+            }
+        }
+    }
+
+    .md-form {
+        .prefix {
+            &.active {
+                color: $skin-4-btn;
+            }
+        }
+    }
+
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $skin-4-btn;
+            }
+        }
+    }
+
+    .top-nav-collapse {
+        background-color: $skin-4-flat;
+    }
+
+    .carousel-multi-item {
+        .controls-top > a, .carousel-indicators li, .carousel-indicators li.active {
+            background-color: $skin-4-btn;
+        }
+    }
+
+    // Tags, form-header, card-header
+    .tag, .form-header, .card-header {
+        background-color: lighten( $skin-4-btn, 2%);
+    }   
+    .sidenav-bg {
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:-1;
+        background-attachment:fixed;
+        &:after {
+            width: 100%;
+            display: block;
+            content: "";
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            bottom:0;
+            background: $skin-4-mask;
+            margin-bottom: -99999px;
+            padding-bottom: 99999px;
+        }
+    }
+}
+
+// Skin 5
+$skin-5-btn: #7f82c5;
+$skin-5-flat: #26294e;
+$skin-5-mask: rgba(31, 38, 76, 0.8);
+$skin-5-navbar: #3d466d;
+
+.skin-5 {
+    .gradient {
+        background: #181a31; /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  #181a31 0%, #6f74b7 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg,  #181a31 0%,#6f74b7 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg,  #181a31 0%,#6f74b7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#181a31', endColorstr='#6f74b7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
+    }
+    .primary-color {
+        background-color: $skin-5-btn !important;
+    }
+    .navbar {
+        background-color: $skin-5-navbar;
+    }
+    .page-footer {
+        background-color: darken( $skin-5-navbar, 15%);
+    }
+    .side-nav {
+        background-color: $skin-5-flat;
+        background-size:cover;
+        background-repeat:no-repeat;
+        .logo-wrapper {
+            &> div {
+                background-color:transparent!important;
+            }
+        }
+        .user-box {
+            padding: 20px 10px 0 10px;
+            img {
+                margin:0 auto 10px auto;
+                max-width:80px;
+            }
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $skin-5-btn, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $elegant-dark-skin-text, 10%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                color: $elegant-dark-skin-text;
+                @include transition (all 0.3s linear);
+                &:hover {
+                    background-color: $skin-5-btn;
+                }
+                &.active {
+                    background-color: $skin-5-btn;
+                }
+            }
+        }
+        .fa {
+            color: $elegant-dark-skin-text;
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: darken( $skin-5-btn, 5%);
+    }
+    .btn-primary {
+        background: $skin-5-btn;
+        &:hover,
+        &:focus {
+            background-color: lighten( $skin-5-btn, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $skin-5-btn, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #00684B;
+        &:hover,
+        &:focus {
+            background-color: lighten( #00684B, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #00684B, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #0F0F0F;
+        &:hover,
+        &:focus {
+            background-color: lighten( #0F0F0F, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #0F0F0F, 20%)!important;
+        }
+    }
+
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]), input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), textarea.md-textarea:focus:not([readonly]) {
+        border-color:$skin-5-btn;
+        box-shadow:0 1px 0 0 $skin-5-btn;
+        &+label {
+            color:$skin-5-btn;
+        }
+    }
+
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $skin-5-btn;
+                border-bottom: 2px solid $skin-5-btn;
+            }
+        }
+    }
+
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+
+            &:after {
+                background-color: $skin-5-btn;
+                border-color: $skin-5-btn;
+            }
+        }
+    }
+
+    .md-form {
+        .prefix {
+            &.active {
+                color: $skin-5-btn;
+            }
+        }
+    }
+
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $skin-5-btn;
+            }
+        }
+    }
+
+    .top-nav-collapse {
+        background-color: $skin-5-flat;
+    }
+
+    .carousel-multi-item {
+        .controls-top > a, .carousel-indicators li, .carousel-indicators li.active {
+            background-color: $skin-5-btn;
+        }
+    }
+
+    // Tags, form-header, card-header
+    .tag, .form-header, .card-header {
+        background-color: lighten( $skin-5-btn, 2%);
+    }   
+
+    .sidenav-bg {
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:-1;
+        background-attachment:fixed;
+        &:after {
+            width: 100%;
+            display: block;
+            content: "";
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            bottom:0;
+            background: $skin-5-mask;
+            margin-bottom: -99999px;
+            padding-bottom: 99999px;
+        }
+    }
+}
+
+// Skin 6
+$skin-6-btn: rgba(21, 73, 103, 0.73);
+$skin-6-flat: #318594;
+$skin-6-mask: rgba(47, 115, 132, 0.8);
+$skin-6-navbar: #5da4b5;
+
+.skin-6 {
+    .gradient {
+        background: #295a67; /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  #295a67 0%, #56abb9 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg,  #295a67 0%,#56abb9 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg,  #295a67 0%,#56abb9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#295a67', endColorstr='#56abb9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
+    }
+    .primary-color {
+        background-color: $skin-6-btn !important;
+    }
+    .navbar {
+        background-color: $skin-6-navbar;
+    }
+    .page-footer {
+        background-color: darken( $skin-6-navbar, 15%);
+    }
+    .side-nav {
+        background-color: $skin-6-flat;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center; // Temporary
+        .logo-wrapper {
+            &> div {
+                background-color:transparent!important;
+            }
+        }
+        .user-box {
+            padding: 20px 10px 0 10px;
+            img {
+                margin:0 auto 10px auto;
+                max-width:80px;
+            }
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $skin-6-btn, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $elegant-dark-skin-text, 10%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                color: $elegant-dark-skin-text;
+                @include transition (all 0.3s linear);
+                &:hover {
+                    background-color: $skin-6-btn;
+                }
+                &.active {
+                    background-color: $skin-6-btn;
+                }
+            }
+        }
+        .fa {
+            color: $elegant-dark-skin-text;
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: darken( $skin-6-btn, 5%);
+    }
+    .btn-primary {
+        background: $skin-6-btn;
+        &:hover,
+        &:focus {
+            background-color: lighten( $skin-6-btn, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $skin-6-btn, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #00684B;
+        &:hover,
+        &:focus {
+            background-color: lighten( #00684B, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #00684B, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #0F0F0F;
+        &:hover,
+        &:focus {
+            background-color: lighten( #0F0F0F, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #0F0F0F, 20%)!important;
+        }
+    }
+
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]), input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), textarea.md-textarea:focus:not([readonly]) {
+        border-color:$skin-6-btn;
+        box-shadow:0 1px 0 0 $skin-6-btn;
+        &+label {
+            color:$skin-6-btn;
+        }
+    }
+
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $skin-6-btn;
+                border-bottom: 2px solid $skin-6-btn;
+            }
+        }
+    }
+
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+
+            &:after {
+                background-color: $skin-6-btn;
+                border-color: $skin-6-btn;
+            }
+        }
+    }
+
+    .md-form {
+        .prefix {
+            &.active {
+                color: $skin-6-btn;
+            }
+        }
+    }
+
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $skin-6-btn;
+            }
+        }
+    }
+
+    .top-nav-collapse {
+        background-color: $skin-6-flat;
+    }
+
+    .carousel-multi-item {
+        .controls-top > a, .carousel-indicators li, .carousel-indicators li.active {
+            background-color: $skin-6-btn;
+        }
+    }
+
+    // Tags, form-header, card-header
+    .tag, .form-header, .card-header {
+        background-color: lighten( $skin-6-btn, 2%);
+    }   
+    .sidenav-bg {
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:-1;
+        background-attachment:fixed;
+        &:after {
+            width: 100%;
+            display: block;
+            content: "";
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            bottom:0;
+            background: $skin-6-mask;
+            margin-bottom: -99999px;
+            padding-bottom: 99999px;
+        }
+    }
+}
+
+// Skin 7
+$skin-7-btn: rgba(187, 33, 77, 0.79);
+$skin-7-flat: #a5a4a4;
+$skin-7-mask: rgba(121, 121, 121, 0.8);
+$skin-7-navbar: #7d8488;
+
+.skin-7 {
+    .gradient {
+        background: #383838; /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  #383838 0%, #a5a4a4 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg,  #383838 0%,#a5a4a4 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg,  #383838 0%,#a5a4a4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383838', endColorstr='#a5a4a4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
+    }
+    .primary-color {
+        background-color: $skin-7-btn !important;
+    }
+    .navbar {
+        background-color: $skin-7-navbar;
+    }
+    .page-footer {
+        background-color: darken( $skin-7-navbar, 15%);
+    }
+    .side-nav {
+        background-color: $skin-7-flat;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center; // Temporary
+        .logo-wrapper {
+            &> div {
+                background-color:transparent!important;
+            }
+        }
+        .user-box {
+            padding: 20px 10px 0 10px;
+            img {
+                margin:0 auto 10px auto;
+                max-width:80px;
+            }
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( $skin-7-btn, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( $elegant-dark-skin-text, 10%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                color: $elegant-dark-skin-text;
+                @include transition (all 0.3s linear);
+                &:hover {
+                    background-color: $skin-7-btn;
+                }
+                &.active {
+                    background-color: $skin-7-btn;
+                }
+            }
+        }
+        .fa {
+            color: $elegant-dark-skin-text;
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: darken( $skin-7-btn, 5%);
+    }
+    .btn-primary {
+        background: $skin-7-btn;
+        &:hover,
+        &:focus {
+            background-color: lighten( $skin-7-btn, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $skin-7-btn, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #00684B;
+        &:hover,
+        &:focus {
+            background-color: lighten( #00684B, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #00684B, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #0F0F0F;
+        &:hover,
+        &:focus {
+            background-color: lighten( #0F0F0F, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #0F0F0F, 20%)!important;
+        }
+    }
+
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]), input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), textarea.md-textarea:focus:not([readonly]) {
+        border-color:$skin-7-btn;
+        box-shadow:0 1px 0 0 $skin-7-btn;
+        &+label {
+            color:$skin-7-btn;
+        }
+    }
+
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid $skin-7-btn;
+                border-bottom: 2px solid $skin-7-btn;
+            }
+        }
+    }
+
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+
+            &:after {
+                background-color: $skin-7-btn;
+                border-color: $skin-7-btn;
+            }
+        }
+    }
+
+    .md-form {
+        .prefix {
+            &.active {
+                color: $skin-7-btn;
+            }
+        }
+    }
+
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: $skin-7-btn;
+            }
+        }
+    }
+
+    .top-nav-collapse {
+        background-color: $skin-7-flat;
+    }
+
+    .carousel-multi-item {
+        .controls-top > a, .carousel-indicators li, .carousel-indicators li.active {
+            background-color: $skin-7-btn;
+        }
+    }
+
+    // Tags, form-header, card-header
+    .tag, .form-header, .card-header {
+        background-color: lighten( $skin-7-btn, 2%);
+    }   
+    .sidenav-bg {
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:-1;
+        background-attachment:fixed;
+        &:after {
+            width: 100%;
+            display: block;
+            content: "";
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            bottom:0;
+            background: $skin-7-mask;
+            margin-bottom: -99999px;
+            padding-bottom: 99999px;
+        }
+    }
+}
+
+.skin-10 {
+    .gradient {
+        background: #000000; /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  #000000 0%, #616161 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg,  #000000 0%,#616161 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg,  #000000 0%,#616161 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#616161',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
+    }
+    .primary-color {
+        background-color: #33b5e5;
+    }
+    .navbar {
+        background-color: #293a48;
+    }
+    .page-footer {
+        background-color: #293a48;
+    }
+    .side-nav {
+        background-color: #293a48;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center; // Temporary
+        .logo-wrapper {
+            &> div {
+                background-color:transparent!important;
+            }
+        }
+        .user-box {
+            padding: 20px 10px 0 10px;
+            img {
+                margin:0 auto 10px auto;
+                max-width:80px;
+            }
+        }
+        .sn-avatar-wrapper img {
+            border: 3px solid darken( #33b5e5, 15%);
+        }
+        .social a {
+            &:hover {
+                background-color: darken( #33b5e5, 10%);
+                @include transition (all 0.3s linear);
+            }
+        }
+        .collapsible li {
+            background-color: transparent;
+            a {
+                color: $elegant-dark-skin-text;
+                font-weight:400;
+                @include transition (all 0.3s linear);
+                &:hover {
+                    background-color: #33b5e5;
+                }
+                &.active {
+                    background-color: #33b5e5;
+                }
+            }
+        }
+        .fa {
+            color: $elegant-dark-skin-text;
+        }
+    }
+    .navbar .navbar-nav .dropdown .dropdown-primary .dropdown-item:hover {
+        background-color: #33b5e5;
+    }
+    .btn-primary {
+        background: $elegant-dark-primary-color;
+        &:hover,
+        &:focus {
+            background-color: lighten( $elegant-dark-primary-color, 5%)!important;
+        }
+        &.active {
+            background-color: darken( $elegant-dark-primary-color, 20%)!important;
+        }
+    }
+    .btn-secondary {
+        background: #00684B;
+        &:hover,
+        &:focus {
+            background-color: lighten( #00684B, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #00684B, 20%)!important;
+        }
+    }
+    .btn-default,
+    .card .btn-action {
+        background: #0F0F0F;
+        &:hover,
+        &:focus {
+            background-color: lighten( #0F0F0F, 5%)!important;
+        }
+        &.active {
+            background-color: darken( #0F0F0F, 20%)!important;
+        }
+    }
+
+    // Custom inputs
+    input[type="email"]:focus:not([readonly]), input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), textarea.md-textarea:focus:not([readonly]) {
+        border-color:#33b5e5;
+        box-shadow:0 1px 0 0 #33b5e5;
+        &+label {
+            color:#33b5e5;
+        }
+    }
+
+    input[type=checkbox]:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #33b5e5;
+                border-bottom: 2px solid #33b5e5;
+            }
+        }
+    }
+
+    input[type=checkbox].filled-in:checked {
+        &+label {
+            &:before {
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+
+            &:after {
+                background-color: #33b5e5;
+                border-color: #33b5e5;
+            }
+        }
+    }
+
+    .md-form {
+        .prefix {
+            &.active {
+                color: #33b5e5;
+            }
+        }
+    }
+
+    /* Select colors */
+    .dropdown-content {
+        li:not(.disabled) {
+            span {
+                color: #33b5e5;
+            }
+        }
+    }
+
+    .top-nav-collapse {
+        background-color: $elegant-dark-skin-color;
+    }
+
+    .carousel-multi-item {
+        .controls-top > a, .carousel-indicators li, .carousel-indicators li.active {
+            background-color: $elegant-dark-primary-color;
+        }
+    }
+
+    // Tags, form-header, card-header
+    .tag, .form-header, .card-header {
+        background-color: lighten( $elegant-dark-primary-color, 2%);
+    }
+
+    .sidenav-bg {
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:-1;
+        background-attachment:fixed;
+        &:after {
+            width: 100%;
+            display: block;
+            content: "";
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            bottom:0;
+            background: rgba(0,0,0,.8);
+            margin-bottom: -99999px;
+            padding-bottom: 99999px;
+        }
+    }
+}

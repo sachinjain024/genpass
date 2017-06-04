@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB PRO 4.1.1
+ * Version: MDB PRO 4.3.2
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -59,6 +59,7 @@ jquery.jsticky.js
 scrollbar.js
 animations.js
 chips.js
+autocomplete.js
 
 */
 
@@ -5174,21 +5175,18 @@ $(function () {
 
 //Initialization
 Waves.attach('.btn, .btn-floating', ['waves-light']);
-Waves.attach('.view .mask', ['waves-light']);
 Waves.attach('.waves-light', ['waves-light']);
-Waves.attach('.navbar-nav a, .nav-icons li a, .navbar form, .nav-tabs .nav-item', ['waves-light']);
-Waves.attach('.navbar-brand', ['waves-light']);
+Waves.attach('.navbar-nav a:not(.navbar-brand), .nav-icons li a, .navbar form, .nav-tabs .nav-item', ['waves-light']);
 Waves.attach('.pager li a', ['waves-light']);
 Waves.attach('.pagination .page-item .page-link', ['waves-effect']);
 Waves.init();//Preloading script
 
 $(document).ready(function () {
-    $('#preloader-markup').load("mdb-addons/preloader.html", function () {
-        $(window).load(function () {
-            $('#mdb-preloader').fadeOut('slow');
-        });
+    $('#preloader-markup').load("mdb-addons/preloader.html", function() {
+        $('#preloader-markup').fadeOut('slow');
     });
-});/* CARD REVEAL */
+});
+/* CARD REVEAL */
 
 (function ($) {
     $(document).ready(function () {
@@ -5732,11 +5730,12 @@ $(document).ready(function ($) {
     }
 }));
 //SMOOTH SCROLL
-$(".smooth-scroll").on('click', 'a', function (event) {
+$(".smooth-scroll").on('click', 'a', function(event) {
     event.preventDefault();
     var elAttr = $(this).attr('href');
+    var offset = ($(this).attr('data-offset') ? $(this).attr('data-offset') : 0);
     $('body,html').animate({
-        scrollTop: $(elAttr).offset().top
+        scrollTop: $(elAttr).offset().top - offset
     }, 700);
 });/* DROPDOWN */
 
@@ -5992,7 +5991,7 @@ var dropdownSelectors = $('.dropdown, .dropup');
             var parentUl = dropdown.parents('ul.nav');
 
             // If parent is ul.nav allow global effect settings
-            if (parentUl.size() > 0) {
+            if (parentUl.height > 0) {
                 effectInDefault = parentUl.data('dropdown-in') || null;
                 effectOutDefault = parentUl.data('dropdown-out') || null;
             }
@@ -6056,6 +6055,7 @@ var dropdownSelectors = $('.dropdown, .dropup');
                     dropdownEffectStart(dropdown, dropdown.effectOut);
                     dropdownEffectEnd(dropdown, function () {
                         dropdown.dropdown.removeClass('open');
+                        dropdown.dropdown.removeClass('show');                        
                     });
                 }
             },
@@ -10188,7 +10188,7 @@ $(function () {
             activateOption(options, selectedOption)
           }
         },
-        'click': function (e) {
+        'touchend click': function (e) {
           e.stopPropagation()
         }
       })
@@ -15580,3 +15580,110 @@ $(function() {
     }
   }
 }(jQuery))
+/* 
+ * Material Design for Bootstrap 
+ * MDB Autocomplete Plugin
+ */
+
+$.fn.mdb_autocomplete = function (options) {
+
+    // Default options
+    var defaults = {
+        data: {}
+    };
+
+    // Get options
+    options = $.extend(defaults, options);
+
+    return this.each(function () {
+
+        // text input
+        var $input = $(this);
+
+        // assign data from options
+        var data = options.data;
+
+        if (Object.keys(data).length) {
+
+            var $autocomplete = $('<ul class="mdb-autocomplete-wrap"></ul>');
+
+            $autocomplete.insertAfter($(this));
+        };
+
+        // Listen if key was pressed
+        $input.on('keyup', function (e) {
+
+            // get value from input
+            var q = $input.val();
+
+            $autocomplete.empty();
+
+            // check if input isn't empty
+            if (q.length) {
+
+                for (var item in data) {
+
+                    // check if item contains value that we're looking for
+                    if (data[item].toLowerCase().indexOf(q.toLowerCase()) !== -1) {
+                        var option = $('<li>' + data[item] + '</li>');
+
+                        $autocomplete.append(option);
+                    }
+                }
+            }
+
+            if (e.which == 13) {
+                $autocomplete.children(":first").trigger('click');
+                $autocomplete.empty();
+            }
+
+            if (q.length == 0) {
+                $('.mdb-autocomplete-clear').css('visibility', 'hidden');
+            } else {
+                $('.mdb-autocomplete-clear').css('visibility', 'visible');
+            }
+        });
+
+        $autocomplete.on('click', 'li', function () {
+
+            // Set input value after click
+            $input.val($(this).text());
+
+            // Clear autocomplete
+            $autocomplete.empty();
+        });
+
+        $('.mdb-autocomplete-clear').on('click', function (e) {
+            e.preventDefault();
+            $input.val('');
+            $(this).css('visibility', 'hidden');
+            $autocomplete.empty();
+            $(this).parent().find('label').removeClass('active');
+        });
+    });
+};/*
+    Enhanced Bootstrap Modals
+    https://mdbootstrap.com
+    office@mdbootstrap.com
+*/
+
+$('body').on('shown.bs.modal', '.modal', function() {
+    if($('.modal-backdrop').length) {
+    } else {
+
+        $modal_dialog = $(this).children('.modal-dialog')
+
+        if($modal_dialog.hasClass('modal-side')) {
+            $(this).addClass('modal-scrolling');
+            $('body').addClass('scrollable');
+        }
+
+        if($modal_dialog.hasClass('modal-frame')) {
+            $(this).addClass('modal-content-clickable');
+            $('body').addClass('scrollable');
+        }
+    }
+});
+$('body').on('hidden.bs.modal', '.modal', function() {
+    $('body').removeClass('scrollable');
+});

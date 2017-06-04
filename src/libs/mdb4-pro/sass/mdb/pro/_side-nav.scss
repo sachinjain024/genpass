@@ -11,6 +11,9 @@
         height: -moz-calc(100%); //Temporary Firefox Fix
         padding-bottom: 60px;
         background-color: #fff;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         z-index: 999;
         backface-visibility: hidden;
         overflow-y: auto;
@@ -36,6 +39,10 @@
             a {
                 margin-bottom: 5px;
                 color: #fff;
+                font-weight: 300;
+                font-size: 0.9rem;
+                height: 45px;
+                line-height: 45px;
                 &.active {
                     @include border-radius (2px);
                 }
@@ -50,8 +57,8 @@
         }
         .collapsible-body a {
             padding-left: 30px;
-            height: 46px;
-            line-height: 46px;
+            height: 45px;
+            line-height: 45px;
         }
         a {
             display: block;
@@ -178,11 +185,41 @@
                 margin: 0;
             }
         }
+        .user-box {
+            padding: 20px 10px 0 10px;
+            img {
+                margin: 0 auto 10px auto;
+                max-width: 80px;
+            }
+        }
         .fa-angle-down {
             &.rotate-icon {
                 position: absolute;
                 right: 0;
-                top: 17px;
+                top: 13px;
+            }
+        }
+        .sidenav-bg {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            min-width: 240px;
+            width:100%;
+            z-index: -1;
+            background-attachment: fixed;
+            &:after {
+                width: 100%;
+                display: block;
+                content: "";
+                position: absolute;
+                height: 100%;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                margin-bottom: -99999px;
+                padding-bottom: 99999px;
             }
         }
     }
@@ -362,7 +399,7 @@
     }
     
     // Fixed sideNav hide on smaller
-    @media #{$medium-and-down} {
+    @media #{$hide-sidenav} {
         .side-nav.fixed {
             transform: translateX(-105%);
             &.right-aligned {

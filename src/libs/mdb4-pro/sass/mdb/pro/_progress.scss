@@ -1,15 +1,18 @@
 // Progress
 .progress {
-    height: 4px;
-    border-radius: 0;
     box-shadow: none;
-    background: $primary-color-dark;
     position: relative;
     display: block;
     width: 100%;
+    height: 4px;
     overflow: hidden;
+    margin-bottom: 1rem;
+    background-color: #eee;
     .progress-bar {
         box-shadow: none;
+        height: 4px;
+        border-radius: 0;
+        background-color: $primary-color-dark;
     }
     .progress-bar-animated {
         -webkit-transition: width 2s ease-in-out;
@@ -212,7 +215,8 @@
 .active .spinner-layer.spinner-blue-only,
 .active .spinner-layer.spinner-red-only,
 .active .spinner-layer.spinner-yellow-only,
-.active .spinner-layer.spinner-green-only {
+.active .spinner-layer.spinner-green-only,
+.active .spinner-layer.spinner-primary-color-only {
     /* durations: 4 * ARCTIME */
     opacity: 1;
     -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite both;

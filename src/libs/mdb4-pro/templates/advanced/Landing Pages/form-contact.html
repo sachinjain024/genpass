@@ -25,7 +25,7 @@
         header,
         .view {
             height: 100%;
-        }
+        } 
         /* Navigation*/
         
         .navbar {
@@ -36,7 +36,7 @@
             background-color: #006296;
         }
         
-   s     @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 768px) {
             .navbar {
                 background-color: #006296;
             }
@@ -44,7 +44,7 @@
         /*Intro*/
         
         .view {
-            background: url("http://mdbootstrap.com/images/regular/people/img%20(54).jpg")no-repeat center center fixed;
+            background: url("https://mdbootstrap.com/images/regular/people/img%20(54).jpg")no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -54,7 +54,7 @@
         @media (max-width: 768px) {
             .full-bg-img,
             .view {
-                height: auto;
+                height: 100%;
                 position: relative;
             }
         }
@@ -84,61 +84,51 @@
     <header>
 
         <!--Navbar-->
-        <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
-
-            <!-- Collapse button-->
-            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
-            <i class="fa fa-bars"></i></button>
-
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-dark scrolling-navbar">
             <div class="container">
-
-                <!--Collapse content-->
-                <div class="collapse navbar-toggleable-xs" id="collapseEx">
-                    <!--Navbar Brand-->
-                    <a class="navbar-brand" href="http://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">MDB</a>
-                    <!--Links-->
-                    <ul class="nav navbar-nav smooth-scroll">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="https://mdbootstrap.com/img/logo/mdb-transparent-sm-shadows.png" class="d-inline-block align-top" alt="MDBootstrap">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav navbar-nav smooth-scroll mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link waves-effect waves-light" href="#home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#best-features">Features</a>
+                            <a class="nav-link waves-effect waves-light" href="#best-features">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#examples-of-use">Examples</a>
+                            <a class="nav-link waves-effect waves-light" href="#examples-of-use">Examples</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                            <a class="nav-link waves-effect waves-light" href="#testimonials">Testimonials</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Pricing</a>
+                            <a class="nav-link waves-effect waves-light" href="#pricing">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#our-team">Team</a>
+                            <a class="nav-link waves-effect waves-light" href="#our-team">Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link waves-effect waves-light" href="#contact">Contact</a>
                         </li>
                     </ul>
-
-                    <!--Navbar icons-->
-                    <ul class="nav navbar-nav nav-flex-icons">
-                        <li class="nav-item wow fadeInRight" data-wow-delay="0.2s">
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
                             <a class="nav-link"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li class="nav-item wow fadeInRight" data-wow-delay="0.3s">
+                        <li class="nav-item">
                             <a class="nav-link"><i class="fa fa-twitter"></i></a>
                         </li>
-                        <li class="nav-item wow fadeInRight" data-wow-delay="0.4s">
+                        <li class="nav-item">
                             <a class="nav-link"><i class="fa fa-instagram"></i></a>
                         </li>
                     </ul>
-
                 </div>
-                <!--/.Collapse content-->
-
             </div>
-
         </nav>
         <!--/.Navbar-->
 
@@ -161,12 +151,12 @@
                         <!--/.First column-->
 
                         <!--Second column-->
-                        <div class="col-lg-6 wow fadeInRight">
+                        <div class="col-lg-6 hidden-md-down wow fadeInRight">
                             <!--Form-->
                             <div class="card">
                                 <div class="card-block">
                                     <!--Header-->
-                                    <div class="text-xs-center">
+                                    <div class="text-center">
                                         <h3><i class="fa fa-envelope"></i> Write to us:</h3>
                                         <hr>
                                     </div>
@@ -190,7 +180,7 @@
                                         <label for="form8">Your message</label>
                                     </div>
 
-                                    <div class="text-xs-center">
+                                    <div class="text-center">
                                         <button class="btn btn-git btn-lg">Send</button>
                                         <hr>
                                         <fieldset class="form-group">
@@ -230,10 +220,10 @@
 
                     <!--First column-->
                     <div class="col-md-4 wow fadeInDown" data-wow-delay="0.2s">
-                        <div class="col-xs-2">
+                        <div class="col-2 float-left">
                             <i class="fa fa-bullhorn blue-text"></i>
                         </div>
-                        <div class="col-xs-10">
+                        <div class="col-10 ml-auto">
                             <h4 class="feature-title">Marketing</h4>
                             <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
                             <a class="btn btn-primary">Learn more</a>
@@ -244,10 +234,10 @@
 
                     <!--Second column-->
                     <div class="col-md-4 wow fadeInDown" data-wow-delay="0.3s">
-                        <div class="col-xs-2">
+                        <div class="col-2 float-left">
                             <i class="fa fa-cogs green-text"></i>
                         </div>
-                        <div class="col-xs-10">
+                        <div class="col-10 ml-auto">
                             <h4 class="feature-title">Customization</h4>
                             <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
                             <a class="btn btn-default">Learn more</a>
@@ -258,10 +248,10 @@
 
                     <!--Third column-->
                     <div class="col-md-4 wow fadeInDown" data-wow-delay="0.4s">
-                        <div class="col-xs-2">
+                        <div class="col-2 float-left">
                             <i class="fa fa-dashboard red-text"></i>
                         </div>
-                        <div class="col-xs-10">
+                        <div class="col-10 ml-auto">
                             <h4 class="feature-title">Support</h4>
                             <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
                             <a class="btn btn-danger">Learn more</a>
@@ -278,7 +268,7 @@
             <hr class="between-sections">
             
             <!--Projects section v.3-->
-            <section class="section text-xs-center" id="examples-of-use">
+            <section class="section text-center" id="examples-of-use">
 
                 <!--Section heading-->
                 <h1 class="section-heading wow fadeIn" data-wow-delay="0.2s">Our best projects</h1>
@@ -289,11 +279,11 @@
                 <div class="row">
 
                     <!--First column-->
-                    <div class="col-md-6 m-b-r wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="col-md-6 mb-r wow fadeInLeft" data-wow-delay="0.3s">
 
                         <!--Featured image-->
                         <div class="view overlay hm-white-slight z-depth-2">
-                            <img src="http://mdbootstrap.com/images/regular/city/img%20(5).jpg">
+                            <img src="https://mdbootstrap.com/images/regular/city/img%20(5).jpg">
                             <a>
                                 <div class="mask"></div>
                             </a>
@@ -311,11 +301,11 @@
                     <!--/First column-->
 
                     <!--Second column-->
-                    <div class="col-md-6 m-b-r wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="col-md-6 mb-r wow fadeInRight" data-wow-delay="0.3s">
 
                         <!--Featured image-->
                         <div class="view overlay hm-white-slight z-depth-2">
-                            <img src="http://mdbootstrap.com/images/regular/city/img%20(6).jpg">
+                            <img src="https://mdbootstrap.com/images/regular/city/img%20(6).jpg">
                             <a>
                                 <div class="mask"></div>
                             </a>
@@ -341,11 +331,11 @@
                 <div class="row">
 
                     <!--First column-->
-                    <div class="col-md-6 m-b-r wow fadeInLeft" data-wow-delay="0.4s">
+                    <div class="col-md-6 mb-r wow fadeInLeft" data-wow-delay="0.4s">
 
                         <!--Featured image-->
                         <div class="view overlay hm-white-slight z-depth-2">
-                            <img src="http://mdbootstrap.com/images/regular/city/img%20(26).jpg">
+                            <img src="https://mdbootstrap.com/images/regular/city/img%20(26).jpg">
                             <a>
                                 <div class="mask"></div>
                             </a>
@@ -363,11 +353,11 @@
                     <!--/First column-->
 
                     <!--Second column-->
-                    <div class="col-md-6 m-b-r wow fadeInRight" data-wow-delay="0.4s">
+                    <div class="col-md-6 mb-r wow fadeInRight" data-wow-delay="0.4s">
 
                         <!--Featured image-->
                         <div class="view overlay hm-white-slight z-depth-2">
-                            <img src="http://mdbootstrap.com/images/regular/city/img%20(25).jpg">
+                            <img src="https://mdbootstrap.com/images/regular/city/img%20(25).jpg">
                             <a>
                                 <div class="mask"></div>
                             </a>
@@ -402,7 +392,7 @@
                 <div class="row">
 
                     <!--First column -->
-                    <div class="col-md-4 m-b-r wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="col-md-4 mb-r wow fadeInLeft" data-wow-delay="0.2s">
 
                         <!--Card-->
                         <div class="card testimonial-card">
@@ -412,7 +402,7 @@
                             </div>
 
                             <!--Avatar-->
-                            <div class="avatar"><img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="img-circle img-responsive">
+                            <div class="avatar"><img src="https://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
                             </div>
 
                             <div class="card-block">
@@ -431,7 +421,7 @@
                     <!--/First column -->
 
                     <!--Second column-->
-                    <div class="col-md-4 m-b-r wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="col-md-4 mb-r wow fadeInLeft" data-wow-delay="0.3s">
 
                         <!--Card-->
                         <div class="card testimonial-card">
@@ -441,7 +431,7 @@
                             </div>
 
                             <!--Avatar-->
-                            <div class="avatar"><img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-1.jpg" class="img-circle img-responsive">
+                            <div class="avatar"><img src="https://mdbootstrap.com/wp-content/uploads/2015/10/avatar-1.jpg" class="rounded-circle img-responsive">
                             </div>
 
                             <div class="card-block">
@@ -460,7 +450,7 @@
                     <!--/Second column-->
 
                     <!--Third column-->
-                    <div class="col-md-4 m-b-r wow fadeInLeft" data-wow-delay="0.4s">
+                    <div class="col-md-4 mb-r wow fadeInLeft" data-wow-delay="0.4s">
 
                         <!--Card-->
                         <div class="card testimonial-card">
@@ -469,7 +459,7 @@
                             <div class="card-up purple darken-2"></div>
 
                             <!--Avatar-->
-                            <div class="avatar"><img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-3.jpg" class="img-circle img-responsive">
+                            <div class="avatar"><img src="https://mdbootstrap.com/wp-content/uploads/2015/10/avatar-3.jpg" class="rounded-circle img-responsive">
                             </div>
 
                             <div class="card-block">
@@ -506,12 +496,12 @@
                 <div class="row">
 
                     <!--First column-->
-                    <div class="col-lg-4 col-md-6 m-b-r wow fadeInLeft">
+                    <div class="col-lg-4 col-md-6 mb-r wow fadeInLeft">
                         <!--Card-->
                         <div class="card">
 
                             <!--Content-->
-                            <div class="text-xs-center">
+                            <div class="text-center">
                                 <div class="card-block">
                                     <h5>Basic plan</h5>
                                     <div class="flex-center">
@@ -533,12 +523,12 @@
                     <!--/First column-->
 
                     <!--Second column-->
-                    <div class="col-lg-4 col-md-6 m-b-r wow fadeInUp">
+                    <div class="col-lg-4 col-md-6 mb-r wow fadeInUp">
                         <!--Card-->
                         <div class="card teal">
 
                             <!--Content-->
-                            <div class="text-xs-center white-text">
+                            <div class="text-center white-text">
                                 <div class="card-block">
                                     <h5>Premium plan</h5>
                                     <div class="flex-center">
@@ -550,7 +540,7 @@
                                     <!--Price-->
                                     <h2><strong>79$</strong></h2>
                                     <p>Esse corporis saepe laudantium velit adipisci cumque iste ratione facere non distinctio cupiditate sequi atque.</p>
-                                    <a class="btn btn-white-outline btn-rounded">Buy now</a>
+                                    <a class="btn btn-outline-white btn-rounded">Buy now</a>
                                 </div>
                             </div>
 
@@ -560,12 +550,12 @@
                     <!--/Second column-->
 
                     <!--Third column-->
-                    <div class="col-lg-4 col-md-6 m-b-r wow fadeInRight">
+                    <div class="col-lg-4 col-md-6 mb-r wow fadeInRight">
                         <!--Card-->
                         <div class="card">
 
                             <!--Content-->
-                            <div class="text-xs-center">
+                            <div class="text-center">
                                 <div class="card-block">
                                     <h5>Advanced plan</h5>
                                     <div class="flex-center">
@@ -602,12 +592,12 @@
                 <!--Section description-->
                 <p class="section-description wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
 
-                <div class="row text-xs-center">
+                <div class="row text-center">
 
                     <!--First column-->
-                    <div class="col-md-4 m-b-r wow fadeIn" data-wow-delay="0.3s">
+                    <div class="col-md-4 mb-r wow fadeIn" data-wow-delay="0.3s">
                         <div class="avatar">
-                            <img src="http://mdbootstrap.com/images/avatars/img%20(5).jpg">
+                            <img src="https://mdbootstrap.com/images/avatars/img%20(5).jpg">
                         </div>
                         <h4>Maria Kate</h4>
                         <h5>Photographer</h5>
@@ -623,9 +613,9 @@
                     <!--/First column-->
 
                     <!--Second column-->
-                    <div class="col-md-4 m-b-r wow fadeIn" data-wow-delay="0.4s">
+                    <div class="col-md-4 mb-r wow fadeIn" data-wow-delay="0.4s">
                         <div class="avatar">
-                            <img src="http://mdbootstrap.com/images/avatars/img%20(6).jpg">
+                            <img src="https://mdbootstrap.com/images/avatars/img%20(6).jpg">
                         </div>
                         <h4>Sarah Melyah</h4>
                         <h5>Front-end Developer</h5>
@@ -641,9 +631,9 @@
                     <!--/Second column-->
 
                     <!--Third column-->
-                    <div class="col-md-4 m-b-r wow fadeIn" data-wow-delay="0.5s">
+                    <div class="col-md-4 mb-r wow fadeIn" data-wow-delay="0.5s">
                         <div class="avatar">
-                            <img src="http://mdbootstrap.com/images/avatars/img%20(8).jpg">
+                            <img src="https://mdbootstrap.com/images/avatars/img%20(8).jpg">
                         </div>
                         <h4>John Doe</h4>
                         <h5>Web Developer</h5>
@@ -665,12 +655,12 @@
             <hr class="between-sections">
            
             <!--Section: Contact v.1-->
-            <section class="section m-b-4" id="contact">
+            <section class="section mb-4" id="contact">
 
                 <!--Section heading-->
                 <h1 class="section-heading wow fadeIn" data-wow-delay="0.2s">Contact</h1>
                 <!--Section description-->
-                <p class="section-description m-b-5 wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+                <p class="section-description mb-5 wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
 
                 <div class="row">
 
@@ -714,7 +704,7 @@
                                     <label for="form8">Icon Prefix</label>
                                 </div>
 
-                                <div class="text-xs-center">
+                                <div class="text-center">
                                     <button class="btn btn-git">Submit</button>
                                 </div>
 
@@ -734,7 +724,7 @@
 
                         <br>
                         <!--Buttons-->
-                        <div class="row text-xs-center">
+                        <div class="row text-center">
                             <div class="col-md-4 wow fadeIn" data-wow-delay="0.4s">
                                 <a class="btn-floating btn-small btn-git"><i class="fa fa-map-marker"></i></a>
                                 <p>New York, NY 10012</p>
@@ -811,7 +801,7 @@
     <!-- SCRIPTS -->
 
     <!-- JQuery -->
-    <script type="text/javascript" src="../../../js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="../../../js/jquery-3.1.1.min.js"></script>
 
     <!-- Tooltips -->
     <script type="text/javascript" src="../../../js/tether.min.js"></script>

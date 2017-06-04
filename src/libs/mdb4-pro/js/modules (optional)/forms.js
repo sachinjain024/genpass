@@ -411,7 +411,7 @@
             activateOption(options, selectedOption)
           }
         },
-        'click': function (e) {
+        'touchend click': function (e) {
           e.stopPropagation()
         }
       })

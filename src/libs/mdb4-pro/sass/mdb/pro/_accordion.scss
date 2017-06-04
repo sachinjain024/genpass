@@ -1,15 +1,28 @@
 // ACCORDION
 .accordion {
-    .panel {
-        padding: 1rem 1.5rem;
+    .card {
         border-bottom: 1px solid #eee;
+        box-shadow: none;
+        .card-header {
+            padding: 1rem 1.5rem;
+            background: transparent;
+            border-bottom: 0;
+            a:not(.collapsed) {
+                .rotate-icon {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        .fa-angle-down {
+            float: right;
+        }
+        .card-block {
+            padding-top: .25rem;
+        }
     }
-    .fa-angle-down {
-    float: right;
-}
 }
 
 // Collapsible body
 .collapsible-body {
     display: none;
-}  
+}
