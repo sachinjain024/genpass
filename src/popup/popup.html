@@ -49,7 +49,65 @@
 
       <!--Panel 3-->
       <div class="tab-pane fade" id="gp-settings" role="tabpanel">
-        Settings
+
+
+        <!--Card-->
+        <div class="card">
+          <!--Card content-->
+          <div class="card-block">
+            <!--Title-->
+            <h4 class="card-title">Password Generation Settings</h4>
+            <hr>
+
+            <table>
+              <tbody>
+
+                <!-- Password Generation type row -->
+                <tr>
+                  <td class="setting-name">Password Type</td>
+                  <td class="setting-value">
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-primary active">
+                        <input type="radio" name="generation-type" id="consistent" checked> Consistent
+                      </label>
+                      <label class="btn btn-primary">
+                        <input type="radio" name="generation-type" id="randomized"> Randomized
+                      </label>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- Master String -->
+                <tr>
+                  <td class="setting-name">Master String</td>
+                  <td class="setting-value">            <div class="md-form master-string-form">
+                    <input type="text" class="input-alternate" placeholder="<M@sT3r/>">
+                  </div>
+                  </td>
+                </tr>
+
+                <!-- Password Length -->
+                <tr>
+                  <td class="setting-name">Password Length</td>
+                  <td class="setting-value">
+                    <form class="range-field">
+                      <input type="range" min="6" max="16" />
+                    </form>
+                  </td>
+                </tr>
+
+                <!--
+                <tr>
+                  <td class="setting-name"></td>
+                  <td class="setting-value"></td>
+                </tr>
+                -->
+              </tbody>
+            </table>
+          </div>
+          <!--/.Card content-->
+        </div>
+        <!--/.Card-->
       </div>
       <!--/.Panel 3-->
     </div>

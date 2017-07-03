@@ -2,3 +2,23 @@ body {
   min-height: 200px;
   width: 500px;
 }
+
+.card {
+  margin-bottom: 5px;
+}
+
+td.setting-name {
+  padding: 15px 10px;
+}
+
+.master-string-form {
+  margin-bottom: 0;
+}
+
+.master-string-form .input-alternate {
+  width: 90%;
+}
+
+span.thumb {
+  display: none !important;
+}
