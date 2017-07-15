@@ -11,6 +11,10 @@ td.setting-name {
   padding: 15px 10px;
 }
 
+.generation-type-setting label:not(.active) {
+  background: #999;
+}
+
 .master-string-form {
   margin-bottom: 0;
 }
