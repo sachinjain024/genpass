@@ -61,17 +61,16 @@
 
             <table>
               <tbody>
-
                 <!-- Password Generation type row -->
                 <tr>
                   <td class="setting-name">Password Type</td>
-                  <td class="setting-value">
+                  <td class="setting-value generation-type-setting">
                     <div class="btn-group" data-toggle="buttons">
                       <label class="btn btn-primary active">
-                        <input type="radio" name="generation-type" id="consistent" checked> Consistent
+                        <input type="radio" name="generation-type" data-value="consistent" checked> Consistent
                       </label>
                       <label class="btn btn-primary">
-                        <input type="radio" name="generation-type" id="randomized"> Randomized
+                        <input type="radio" name="generation-type" data-value="randomized"> Randomized
                       </label>
                     </div>
                   </td>
@@ -80,8 +79,9 @@
                 <!-- Master String -->
                 <tr>
                   <td class="setting-name">Master String</td>
-                  <td class="setting-value">            <div class="md-form master-string-form">
-                    <input type="text" class="input-alternate" placeholder="<M@sT3r/>">
+                  <td class="setting-value">
+                    <div class="md-form master-string-form">
+                    <input type="text" class="input-alternate" id="master-string-el" placeholder="<M@sT3r/>">
                   </div>
                   </td>
                 </tr>
@@ -91,17 +91,11 @@
                   <td class="setting-name">Password Length</td>
                   <td class="setting-value">
                     <form class="range-field">
-                      <input type="range" min="6" max="16" />
+                      <input type="range" min="6" max="16" id="password-length-el"/>
                     </form>
                   </td>
                 </tr>
 
-                <!--
-                <tr>
-                  <td class="setting-name"></td>
-                  <td class="setting-value"></td>
-                </tr>
-                -->
               </tbody>
             </table>
           </div>
@@ -126,8 +120,13 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="../libs/mdb4-pro/js/mdb.min.js"></script>
 
+  <!-- Our Libs/External scripts -->
+  <script type="text/javascript" src="../logger/logger.js"></script>
+  <script type="text/javascript" src="../libs/StorageService.js"></script>
+
   <!-- Custom script -->
-  <script type="text/javascript" src="popup.js"></script>
+  <script type="text/javascript" src="../utils/constants.js"></script>
+  <script type="text/javascript" src="settings.js"></script>
 
 </body>
 

@@ -1,6 +1,6 @@
 var Logger = {
   enabled: true,
-  ns: 'iCashback: ',
+  ns: 'GenPass: ',
 
   log: function(msg) {
     this.enabled && console.log.apply(console, [this.ns].concat(Array.prototype.slice.call(arguments)));
