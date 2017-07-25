@@ -3,6 +3,32 @@ body {
   width: 500px;
 }
 
+#gp-generator .password-field-container {
+  width: 70%;
+  margin-bottom: -5px;
+}
+
+#password-description {
+  color: #666;
+  font-size: 12px;
+}
+
+#gp-generator .copy-button-container {
+  text-align: center;
+}
+
+#gp-generator .copy-button {
+  margin-bottom: 0;
+  background: #7cb342;
+}
+
+#gp-generator .copy-message {
+  font-size: 10px;
+  font-style: italic;
+  color: #888;
+  padding-top: 3px;
+}
+
 .card {
   margin-bottom: 5px;
 }
