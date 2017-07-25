@@ -28,6 +28,17 @@
       });
     },
 
+    getSettings: function(callback) {
+      var that = this;
+
+      StorageService.getRecord(PG.CONSTANTS.SETTINGS.KEY_NAME_IN_STORAGE, function(result) {
+        var settingsObject = result[PG.CONSTANTS.SETTINGS.KEY_NAME_IN_STORAGE];
+        var allSettings = Object.assign({}, that.defaults, settingsObject);
+
+        callback.call(that, allSettings);
+      });
+    },
+
     set: function(keyName, value) {
       var that = this;
 
@@ -59,13 +70,10 @@
     init: function() {
       var that = this;
 
-      StorageService.getRecord(PG.CONSTANTS.SETTINGS.KEY_NAME_IN_STORAGE, function(result) {
-        var settingsObject = result[PG.CONSTANTS.SETTINGS.KEY_NAME_IN_STORAGE];
-        var allSettings = Object.assign({}, that.defaults, settingsObject);
+      this.getSettings(function(settings) {
+        Logger.log(settings);
 
-        Logger.log(allSettings);
-
-        that.updateFields(allSettings);
+        that.updateFields(settings);
         that.addListeners();
       });
     }
