@@ -46,8 +46,18 @@
       return pass;
     },
 
-    generateConsistentPassword: function(url, master, length) {
+    trimStringToLength: function(string, length) {
+      return string.substr(0, length);
+    },
 
+    generateConsistentPassword: function(url, master, length) {
+      var md5Hash,
+        dummyElement = document.createElement('a');
+
+      dummyElement.href = url;
+      md5Hash = md5(dummyElement.host, master);
+
+      return this.trimStringToLength(md5Hash, length);
     },
 
     generatePassword: function(currentPageUrl) {
