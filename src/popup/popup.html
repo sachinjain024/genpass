@@ -22,12 +22,9 @@
 <body>
   <div id="mainPopup">
     <!-- Nav tabs -->
-    <ul class="nav nav-tabs tabs-3 pink" role="tablist">
+    <ul class="nav nav-tabs tabs-2 pink" role="tablist">
       <li class="nav-item">
         <a class="nav-link active" data-toggle="tab" href="#gp-generator" role="tab"><i class="fa fa-key"></i> Generator</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#gp-history" role="tab"><i class="fa fa-history"></i> History</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" data-toggle="tab" href="#gp-settings" role="tab"><i class="fa fa-gear"></i> Settings</a>
@@ -43,7 +40,7 @@
           <!--Card image-->
           <!-- We will randomly change this image out of set of 10-15 images -->
           <div class="view overlay hm-white-slight">
-            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2840%29.jpg" class="img-fluid" alt="">
+            <img id="banner-image" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2840%29.jpg" class="img-fluid" alt="">
             <a>
               <div class="mask waves-effect waves-light"></div>
             </a>
@@ -52,13 +49,7 @@
 
           <!--Card content-->
           <div class="card-block">
-            <h5 class="red-text"><i class="fa fa-key"></i> Passwords</h5>
-            <!--Title-->
-            <h4 class="card-title">Security is Priority!</h4>
-            <!--Text-->
-            <p id="password-description" class="card-text">
-              This is a totally randomized password of 8 characters.
-            </p>
+            <h5 class="red-text"><i class="fa fa-key"></i> <span id="password-description"></span></h5>
 
             <div class="copy-button-container">
               <a id="generated-password-field" class="btn btn-primary btn-lg copy-button">P@$sm0rD</a>
@@ -72,16 +63,8 @@
       </div>
       <!--/.Panel 1-->
 
-      <!--Panel 2-->
-      <div class="tab-pane fade" id="gp-history" role="tabpanel">
-        History
-      </div>
-      <!--/.Panel 2-->
-
       <!--Panel 3-->
       <div class="tab-pane fade" id="gp-settings" role="tabpanel">
-
-
         <!--Card-->
         <div class="card">
           <!--Card content-->
@@ -121,9 +104,10 @@
                 <tr>
                   <td class="setting-name">Password Length</td>
                   <td class="setting-value">
-                    <form class="range-field">
+                    <form class="range-field password-length-form">
                       <input type="range" min="6" max="16" id="password-length-el"/>
                     </form>
+
                   </td>
                 </tr>
 

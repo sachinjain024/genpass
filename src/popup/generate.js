@@ -2,6 +2,7 @@
   var GenetateController = {
     passCharacters: ('abcdefghijklmnopqrstuvwxyz' + 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + '0123456789').split(''),
     specialCharacters: '!@#$%^&*()_+-='.split(''),
+    NumberOfBannerImages: 14,
 
     defaults: {
     },
@@ -34,13 +35,17 @@
       return array;
     },
 
+    getRandomNumber: function(upperBound) {
+      upperBound = upperBound || 100;
+      return Math.floor((Math.random()*10000) % upperBound);
+    },
+
     generateRandomPassword: function(length) {
       var pass = '',
         allCharsLength = this.allCharacters.length;
 
       for (var i = 0; i < length; i++) {
-        var randomNumber = Math.floor((Math.random()*10000) % allCharsLength);
-
+        var randomNumber = this.getRandomNumber(allCharsLength);
         pass += this.allCharacters[randomNumber];
       }
 
@@ -74,6 +79,7 @@
         }
 
         that.updatePasswordField(password);
+        that.updatePasswordDescription(settings);
       });
     },
 
@@ -98,11 +104,31 @@
       });
     },
 
+    updateBanner: function() {
+      var randomNumber = this.getRandomNumber(this.NumberOfBannerImages);
+      var imageUrl = '/resources/images/banners/' + randomNumber + '.jpg';
+
+      $('#banner-image').attr('src', imageUrl);
+    },
+
+    updatePasswordDescription: function(settings) {
+      var description;
+
+      if (settings['generationType'] === PG.CONSTANTS.SETTINGS.CONSISTENT_GENERATION_TYPE) {
+        description = 'This is consistent password based on current domain and master string.'
+      } else {
+        description = 'This is totally randomized password of ' + settings['passwordLength'] + ' length.'
+      }
+
+      $('#password-description').html(description);
+    },
+
     init: function() {
       var that = this;
 
       this.allCharacters = this.createPasswordDictionary();
       this.initClipboard();
+      this.updateBanner();
 
       chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
         that.generatePassword(tabs[0].url || 'about:blank')
