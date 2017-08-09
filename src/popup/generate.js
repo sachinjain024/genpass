@@ -12,6 +12,7 @@
 
     updatePasswordField: function(password) {
       $(this.fieldSelectors.passwordFieldSelector).html(password);
+      $(this.fieldSelectors.passwordFieldSelector).attr('data-password', password);
     },
 
     shuffle: function(array) {
@@ -81,10 +82,27 @@
       return this.shuffle(dict);
     },
 
+    initClipboard: function() {
+      var clipboard = new Clipboard('#generated-password-field', {
+        text: function(copyTarget) {
+          return copyTarget.getAttribute('data-password');
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        $('.copy-message').html('Copied!!');
+      });
+
+      clipboard.on('error', function(e) {
+        $('.copy-message').html('Unable to copy. Please copy manually!');
+      });
+    },
+
     init: function() {
       var that = this;
 
       this.allCharacters = this.createPasswordDictionary();
+      this.initClipboard();
 
       chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
         that.generatePassword(tabs[0].url || 'about:blank')
