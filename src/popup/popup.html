@@ -52,7 +52,7 @@
             <h5 class="red-text"><i class="fa fa-key"></i> <span id="password-description"></span></h5>
 
             <div class="copy-button-container">
-              <a id="generated-password-field" class="btn btn-primary btn-lg copy-button">P@$sm0rD</a>
+              <a id="generated-password-field" class="btn cyan btn-lg copy-button">P@$sm0rD</a>
               <div class="copy-message">Click on password to Copy!</div>
             </div>
           </div>
@@ -80,10 +80,10 @@
                   <td class="setting-name">Password Type</td>
                   <td class="setting-value generation-type-setting">
                     <div class="btn-group" data-toggle="buttons">
-                      <label class="btn btn-primary active">
+                      <label class="btn pink active">
                         <input type="radio" name="generation-type" data-value="consistent" checked> Consistent
                       </label>
-                      <label class="btn btn-primary">
+                      <label class="btn pink">
                         <input type="radio" name="generation-type" data-value="randomized"> Randomized
                       </label>
                     </div>
@@ -95,8 +95,9 @@
                   <td class="setting-name">Master String</td>
                   <td class="setting-value">
                     <div class="md-form master-string-form">
-                    <input type="text" class="input-alternate" id="master-string-el" placeholder="<M@sT3r/>">
-                  </div>
+                      <input type="password" class="input-alternate" id="master-string-el" placeholder="<M@sT3r/>">
+                    </div>
+                    <button type="button" class="btn btn-pink" id="show-master-string">Show</button>
                   </td>
                 </tr>
 
@@ -107,7 +108,7 @@
                     <form class="range-field password-length-form">
                       <input type="range" min="6" max="16" id="password-length-el"/>
                     </form>
-
+                    <a class="btn-floating pink btn-sm"><span id="password-length-value"></span></a>
                   </td>
                 </tr>
 

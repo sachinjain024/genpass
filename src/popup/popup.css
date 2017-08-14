@@ -28,7 +28,6 @@ body {
 
 #gp-generator .copy-button {
   margin-bottom: 0;
-  background: #7cb342;
 }
 
 #gp-generator .copy-message {
@@ -47,21 +46,39 @@ td.setting-name {
 }
 
 .generation-type-setting label:not(.active) {
-  background: #999;
+  background: #999 !important;
 }
 
 .master-string-form {
   margin-bottom: 0;
+  width: 73%;
+  display: inline-block;
 }
 
 .master-string-form .input-alternate {
   width: 90%;
 }
 
-span.thumb {
-  display: none !important;
+#show-master-string {
+  margin: 0;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 15px;
+  text-transform: none;
 }
 
 .password-length-form {
-  width: 85%;
+  width: 83%;
+  display: inline-block;
+}
+
+.password-length-form + a.btn-floating {
+  display: inline-block;
+  margin: 0;
+  margin-left: 5px;
+}
+
+#password-length-value {
+  padding: 11px;
+  color: white;
 }

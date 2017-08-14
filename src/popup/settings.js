@@ -9,7 +9,9 @@
     fieldSelectors: {
       generationType: '.generation-type-setting',
       masterString: '#master-string-el',
-      passwordLength: '#password-length-el'
+      passwordLength: '#password-length-el',
+      passwordLengthValue: '#password-length-value',
+      showMasterStringButton: '#show-master-string'
     },
 
     addListeners: function() {
@@ -25,6 +27,11 @@
 
       $(this.fieldSelectors.passwordLength).change(function(event) {
         that.set('passwordLength', event.target.value);
+        $(that.fieldSelectors.passwordLengthValue).html(event.target.value);
+      });
+      
+      $(this.fieldSelectors.showMasterStringButton).click(function () {
+        $(that.fieldSelectors.masterString).attr('type', 'text');
       });
     },
 
@@ -65,6 +72,7 @@
 
       $(this.fieldSelectors.masterString).val(settingsObject['masterString']);
       $(this.fieldSelectors.passwordLength).val(settingsObject['passwordLength']);
+      $(this.fieldSelectors.passwordLengthValue).html(settingsObject['passwordLength']);
     },
 
     init: function() {
