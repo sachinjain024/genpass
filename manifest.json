@@ -4,16 +4,17 @@
   "manifest_version": 2,
   "description": "Chrome and Mozilla extension to generate random passwords",
 
+  "applications": {
+    "gecko": {
+      "id": "extension@genpass",
+      "strict_min_version": "49.0"
+    }
+  },
+
   "icons": {
     "16": "resources/icons/icon16.png",
     "48": "resources/icons/icon48.png",
     "128": "resources/icons/icon128.png"
-  },
-
-  "background": {
-    "scripts": [
-
-    ]
   },
 
   "browser_action": {
