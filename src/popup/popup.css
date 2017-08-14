@@ -30,6 +30,13 @@ body {
   margin-bottom: 0;
 }
 
+.regenerate-password i {
+  font-size: 20px;
+  vertical-align: -webkit-baseline-middle;
+  color: darkcyan;
+  cursor: pointer;
+}
+
 #gp-generator .copy-message {
   font-size: 10px;
   font-style: italic;

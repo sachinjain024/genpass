@@ -8,12 +8,21 @@
     },
 
     fieldSelectors: {
-      passwordFieldSelector: '#generated-password-field'
+      passwordFieldSelector: '#generated-password-field',
+      regenerate: '.regenerate-password'
     },
 
     updatePasswordField: function(password) {
       $(this.fieldSelectors.passwordFieldSelector).html(password);
       $(this.fieldSelectors.passwordFieldSelector).attr('data-password', password);
+    },
+
+    addEventListeners: function() {
+      var that = this;
+
+      $(this.fieldSelectors.regenerate).click(function() {
+        that.generatePassword(that.currentPageUrl);
+      });
     },
 
     shuffle: function(array) {
@@ -128,10 +137,12 @@
 
       this.allCharacters = this.createPasswordDictionary();
       this.initClipboard();
+      this.addEventListeners();
       this.updateBanner();
 
       chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-        that.generatePassword(tabs[0].url || 'about:blank')
+        that.currentPageUrl = tabs[0].url || 'about:blank';
+        that.generatePassword(that.currentPageUrl)
       });
     }
   };
