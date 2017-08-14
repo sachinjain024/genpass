@@ -2,7 +2,7 @@
   var GenetateController = {
     passCharacters: ('abcdefghijklmnopqrstuvwxyz' + 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + '0123456789').split(''),
     specialCharacters: '!@#$%^&*()_+-='.split(''),
-    NumberOfBannerImages: 14,
+    NumberOfBannerImages: 18,
 
     defaults: {
     },

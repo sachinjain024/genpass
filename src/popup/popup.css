@@ -4,7 +4,7 @@ body {
 }
 
 #banner-image {
-  width: 100%;
+  width: 500px;
   height: 200px;
 }
 
@@ -88,4 +88,17 @@ td.setting-name {
 #password-length-value {
   padding: 11px;
   color: white;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px 0;
+  color: white;
+  background: #535;
+}
+
+.footer h5 {
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0 10px;
 }
