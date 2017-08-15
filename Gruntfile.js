@@ -7,4 +7,22 @@
  **/
 
 module.exports = function (grunt) {
+  grunt.initConfig({
+    zipup: {
+      package: {
+        appName: 'GenPass',
+        version: '0.0.1',
+        files: [
+          { cwd: 'extension/src', src: '**', expand: true, dest: 'src' },
+          { cwd: 'extension/resources', src: '**', expand: true, dest: 'resources' },
+          { src: 'extension/manifest.json', dest: 'manifest.json' }
+        ],
+        outDir: 'extension/builds'
+      }
+    }
+  });
+
+  grunt.loadNpmTasks('grunt-zipup');
+
+  grunt.registerTask('release-chrome', ['zipup']);
 };

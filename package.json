@@ -1,0 +1,27 @@
+{
+  "name": "genpass",
+  "version": "1.0.0",
+  "description": "Chrome extension to generate random and consistent passwords",
+  "main": "Gruntfile.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachinjain024/genpass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sachinjain024/genpass/issues"
+  },
+  "homepage": "https://github.com/sachinjain024/genpass#readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-zipup": "^0.1.8"
+  }
+}

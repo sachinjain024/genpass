@@ -1,0 +1,104 @@
+body {
+  min-height: 200px;
+  width: 500px;
+}
+
+#banner-image {
+  width: 500px;
+  height: 200px;
+}
+
+#gp-generator .card-block {
+  text-align: center;
+}
+
+#gp-generator .password-field-container {
+  width: 70%;
+  margin-bottom: -5px;
+}
+
+#password-description {
+  color: #666;
+  font-size: 12px;
+}
+
+#gp-generator .copy-button-container {
+  text-align: center;
+}
+
+#gp-generator .copy-button {
+  margin-bottom: 0;
+}
+
+.regenerate-password i {
+  font-size: 20px;
+  vertical-align: -webkit-baseline-middle;
+  color: darkcyan;
+  cursor: pointer;
+}
+
+#gp-generator .copy-message {
+  font-size: 10px;
+  font-style: italic;
+  color: #888;
+  padding-top: 3px;
+}
+
+.card {
+  margin-bottom: 5px;
+}
+
+td.setting-name {
+  padding: 15px 10px;
+}
+
+.generation-type-setting label:not(.active) {
+  background: #999 !important;
+}
+
+.master-string-form {
+  margin-bottom: 0;
+  width: 73%;
+  display: inline-block;
+}
+
+.master-string-form .input-alternate {
+  width: 90%;
+}
+
+#show-master-string {
+  margin: 0;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 15px;
+  text-transform: none;
+}
+
+.password-length-form {
+  width: 83%;
+  display: inline-block;
+}
+
+.password-length-form + a.btn-floating {
+  display: inline-block;
+  margin: 0;
+  margin-left: 5px;
+}
+
+#password-length-value {
+  padding: 11px;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px 0;
+  color: white;
+  background: #535;
+}
+
+.footer h5 {
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0 10px;
+}
