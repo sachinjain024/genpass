@@ -11,7 +11,7 @@ module.exports = function (grunt) {
     zipup: {
       package: {
         appName: 'GenPass',
-        version: '0.0.1',
+        version: '0.0.2',
         files: [
           { cwd: 'extension/src', src: '**', expand: true, dest: 'src' },
           { cwd: 'extension/resources', src: '**', expand: true, dest: 'resources' },
