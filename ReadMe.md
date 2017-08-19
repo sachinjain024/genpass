@@ -1,4 +1,4 @@
-# GenPass - Strong Password Generator
+# GenPass - Strong Password Generator ![GenPass Icon](https://raw.githubusercontent.com/sachinjain024/genpass/master/extension/resources/icons/icon32.png) 
 
 ## Why Genpass
 One solution to generate strong passwords. Many users use same or similar passwords on multiple websites across the web.
