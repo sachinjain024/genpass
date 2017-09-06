@@ -1,6 +1,8 @@
 (function(window) {
   var GenetateController = {
     passCharacters: ('abcdefghijklmnopqrstuvwxyz' + 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + '0123456789').split(''),
+    shuffledLowerCaseChars: 'ltzkrjpxyqgcihdmoabvuwnesf'.split(''),
+    shuffledUpperCaseChars: 'ZUINFTBEJPRAGOMLDSVXHWKCYQ'.split(''),
     specialCharacters: '!@#$%^&*()_+-='.split(''),
     NumberOfBannerImages: 18,
 
@@ -61,18 +63,51 @@
       return pass;
     },
 
+
+    /**
+     * Replace given character with new Upper case character in consistent manner
+     *
+     * @param currentPassword
+     * @param character
+     * @returns String updatedPassword
+     */
+    introduceCase: function(currentPassword, character) {
+      var passAsArray = currentPassword.split(''),
+        indexInAlphabets = this.passCharacters.indexOf(character),
+        targetIndex = indexInAlphabets % currentPassword.length,
+        newCharacter;
+
+      newCharacter = this.shuffledUpperCaseChars[indexInAlphabets % 26];
+
+      if (targetIndex === -1) {
+        targetIndex = 0;
+      }
+
+      passAsArray[targetIndex] = newCharacter;
+
+      return passAsArray.join('');
+    },
+
     trimStringToLength: function(string, length) {
       return string.substr(0, length);
     },
 
     generateConsistentPassword: function(url, master, length) {
       var md5Hash,
+        finalPass,
         dummyElement = document.createElement('a');
 
       dummyElement.href = url;
       md5Hash = md5(dummyElement.host, master);
 
-      return this.trimStringToLength(md5Hash, length);
+      // Trim password to desired length
+      finalPass = this.trimStringToLength(md5Hash, length);
+
+      // Introduce upper case characters
+      finalPass = this.introduceCase(finalPass, dummyElement.host.charAt(0));
+      finalPass = this.introduceCase(finalPass, master.charAt(0));
+
+      return finalPass;
     },
 
     generatePassword: function(currentPageUrl) {

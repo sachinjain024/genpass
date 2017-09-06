@@ -30,6 +30,10 @@ body {
   margin-bottom: 0;
 }
 
+#generated-password-field {
+  text-transform: none;
+}
+
 .regenerate-password i {
   font-size: 20px;
   vertical-align: -webkit-baseline-middle;
