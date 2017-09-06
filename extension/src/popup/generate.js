@@ -3,7 +3,7 @@
     passCharacters: ('abcdefghijklmnopqrstuvwxyz' + 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + '0123456789').split(''),
     shuffledLowerCaseChars: 'ltzkrjpxyqgcihdmoabvuwnesf'.split(''),
     shuffledUpperCaseChars: 'ZUINFTBEJPRAGOMLDSVXHWKCYQ'.split(''),
-    specialCharacters: '!@#$%^&*()_+-='.split(''),
+    specialCharacters: '!@#$^&_-='.split(''),
     NumberOfBannerImages: 18,
 
     defaults: {
@@ -63,6 +63,28 @@
       return pass;
     },
 
+    getHashValue: function(string) {
+      var hash,
+        that = this;
+
+      hash = string.split('').reduce(function(sum, char) {
+        return sum + ((that.passCharacters.indexOf(char) * 17) % 31);
+      }, 0);
+
+      return hash;
+    },
+
+    introduceSpecialCharacter: function(currentPassword, domain) {
+      var hash1 = this.getHashValue(currentPassword),
+        hash2 = this.getHashValue(domain),
+        passAsArray = currentPassword.split(''),
+        passLength = currentPassword.length;
+
+      passAsArray[hash1 % passLength] = this.specialCharacters[hash1 % this.specialCharacters.length];
+      passAsArray[hash2 % passLength] = this.specialCharacters[hash2 % this.specialCharacters.length];
+
+      return passAsArray.join('');
+    },
 
     /**
      * Replace given character with new Upper case character in consistent manner
@@ -106,6 +128,11 @@
       // Introduce upper case characters
       finalPass = this.introduceCase(finalPass, dummyElement.host.charAt(0));
       finalPass = this.introduceCase(finalPass, master.charAt(0));
+
+      console.log(finalPass);
+
+      // Introduce special characters
+      finalPass = this.introduceSpecialCharacter(finalPass, dummyElement.host);
 
       return finalPass;
     },
