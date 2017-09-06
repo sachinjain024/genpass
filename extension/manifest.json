@@ -1,6 +1,6 @@
 {
   "name": "GenPass: Strong Password Generator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "manifest_version": 2,
   "description": "Chrome and Mozilla extension to generate random passwords",
 
