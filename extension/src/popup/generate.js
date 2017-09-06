@@ -3,7 +3,7 @@
     passCharacters: ('abcdefghijklmnopqrstuvwxyz' + 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + '0123456789').split(''),
     shuffledLowerCaseChars: 'ltzkrjpxyqgcihdmoabvuwnesf'.split(''),
     shuffledUpperCaseChars: 'ZUINFTBEJPRAGOMLDSVXHWKCYQ'.split(''),
-    specialCharacters: '!@#$^&_-='.split(''),
+    specialCharacters: '!@-#$.^&_:%?='.split(''),
     NumberOfBannerImages: 18,
 
     defaults: {
